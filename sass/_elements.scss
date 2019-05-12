@@ -1,0 +1,161 @@
+/*________________ todo input group , btn _____________________*/
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .inputGroup {
+    &_pIndent {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .inputGroupWrap {
+    flex-wrap: wrap;
+    .inputGroup {
+      width: 100%;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #cdd1d1;
+  box-sizing: border-box !important;
+  background-color: #fff;
+  &_pINdent {
+    padding-right: 30px;
+  }
+  &:focus {
+    border-color: #00bea5;
+    box-shadow: 0 0 5px 0 #00bea5;
+    outline: none;
+  }
+}
+
+input[type="search"] {
+  padding-right: 55px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 16px;
+  color: #000;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox + .label {
+  @include flexAlign(center, flex-start);
+  &:before {
+    content: ' ';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #cdd1d1;
+    margin-right: 15px;
+    background-color: #fff;
+  }
+}
+
+.checkbox:checked + .label {
+  &:before {
+    background: #fff url("../images/checked.png") no-repeat center;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("../images/moreCat.png") 97% center no-repeat/4%;
+}
+
+textarea.input {
+  padding: 15px;
+}
+
+/*------ todo btn ------*/
+.btn {
+  @include flexAlign(center, space-around);
+  width: 246px;
+  height: 40px;
+  border: 2px solid $primary-color;
+  margin-bottom: 15px;
+  color: $primary-color;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  transition: .3s;
+  background-color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+    text-decoration: none;
+    transition: .3s;
+  }
+  &:focus {
+    color: #fff;
+    border-color: $primary-color;
+    box-shadow: 0 0 8px 0 $primary-color;
+    text-decoration: none;
+    background-color: $primary-color;
+    outline: none;
+  }
+  &:active {
+    color: #fff;
+    border-color: $primary-color;
+    box-shadow: 0 0 8px 0 #00bea5;
+    background-color: $primary-color;
+    outline: none;
+  }
+
+  &_dark {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      border-color: #1b1b1b;
+      background-color: #1b1b1b;
+    }
+    &:focus {
+      color: #fff;
+      border-color: #1b1b1b;
+      box-shadow: 0 0 8px 0 #1b1b1b;
+      text-decoration: none;
+    }
+    &:active {
+      color: #fff;
+      border-color: #1b1b1b;
+      box-shadow: 0 0 8px 0 #1b1b1b;
+    }
+  }
+  &_primary {
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      color: #fff;
+      border-color: #00a188;
+      background-color: #00a188;
+    }
+    &:focus {
+      color: #fff;
+    }
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+/*------ btn end ------*/
+
+/*________________ input group, btn end _____________________*/

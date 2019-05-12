@@ -1,0 +1,135 @@
+/*________________ todo footer _____________________*/
+.footer {
+  padding: 44px 0 37px 0;
+  background-color: #000;
+  color: #fff;
+  &__left {
+    margin-bottom: 34px;
+    &Inner {
+      @include flexAlign(flex-start);
+    }
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+    &:focus {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  &__menu {
+    @include listReset();
+  }
+  &__menuItem {
+    &_title {
+      padding-right: 32px;
+      margin-bottom: 36px;
+      background: url("../images/privateOfficeHover.png") right center no-repeat/16%;
+    }
+    > a {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+  }
+  &__form {
+    margin-bottom: 36px;
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      height: 40px;
+      padding: 0 12px;
+      border: 1px solid $primary-color;
+      background-color: transparent;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 8px 0 #00bea5;
+        outline: none;
+      }
+    }
+    @include placeholder {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  .social {
+    &__list {
+      @include inlineBlockAlign(middle);
+      @include listReset();
+      margin-right: 23px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: block;
+        width: 33px;
+        height: 33px;
+        background: url("../images/svg/instagram-logo.svg") no-repeat;
+        background-size: cover;
+        &:hover {
+          background: url("../images/svg/instagram-logoHover.svg");
+          background-size: cover;
+        }
+        &.youtube {
+          width: 62px;
+          height: 62px;
+          background: url("../images/svg/youtube-logo.svg") no-repeat;
+           background-size: cover;
+          &:hover {
+            background: url("../images/svg/youtube-logoHover.svg");
+            background-size: cover;
+          }
+        }
+        &.twitter {
+          width: 36px;
+          height: 33px;
+          background: url("../images/svg/twitter-logo-silhouette.svg") no-repeat;
+           background-size: cover;
+          &:hover {
+            background: url("../images/svg/twitter-logo-silhouetteHover.svg");
+            background-size: cover;
+          }
+        }
+        &.facebook {
+          width: 32px;
+          height: 32px;
+          background: url("../images/svg/facebook.svg") no-repeat;
+           background-size: cover;
+          &:hover {
+            background: url("../images/svg/facebookHover.svg");
+            background-size: cover;
+          }
+        }
+        &:hover {
+          transition: background .3s;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    &__form {
+      form {
+        display: flex;
+      }
+      input {
+        width: 70%;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+}
+
+/*________________ footer end _____________________*/

@@ -1,0 +1,47 @@
+/*_________________  todo bread crumbs _____________________*/
+.breadCrumbs {
+  padding: 12px 0;
+  background-color: #000;
+  &__list {
+    @include flexAlign(flex-start, flex-start);
+    @include listReset();
+    flex-wrap: wrap;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    &-item {
+      @include flexAlign();
+      margin-bottom: 8px;
+      &:after {
+        display: block;
+        width: 15px;
+        height: 14px;
+        margin: 0 4px;
+        content: ' ';
+        background: url("../images/svg/arrow.svg") no-repeat;
+        background-size: cover;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .breadCrumbs {
+    &__list {
+      &-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/*_________________ bread crumbs end _____________________*/
