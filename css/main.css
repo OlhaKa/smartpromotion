@@ -2165,6 +2165,12 @@ h2 {
   display: block;
 }
 
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .footer_cont,
 .footer .social_block {
   flex-direction: column;
@@ -2184,6 +2190,16 @@ h2 {
 
 .footer_mail a:hover {
   text-decoration: none;
+}
+
+.footer .social_block .dev_link {
+    color: #ffffff;
+    transition: .2s;
+}
+
+.footer .social_block .dev_link:hover {
+    text-decoration: none;
+    color: #00abc3;
 }
 
 .footer .social_link {
