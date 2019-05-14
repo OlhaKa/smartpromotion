@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../font/fontawesome-5.7.2/all.css">
     <script src="../js/modernizr.js"></script>
 </head>
@@ -40,7 +41,9 @@
         <div class="searchContent">
             <div id="wrap">
                 <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Что ищем?"><input id="search_submit" value="Rechercher" type="submit">   <i class="fal fa-search"></i>
+                    <input id="search" name="search" type="text" placeholder="Что ищем?">
+                    <input id="search_submit" value="Rechercher" type="submit">
+                    <img src="../images/svg/magnifying-glass-browser.svg" alt="">
                 </form>
 
             </div>
@@ -48,110 +51,62 @@
                 <a href="#" class="favoriteProduct">
                     <span class="counter">10</span>
                 </a>
-                <a href="#" class="basketBtn"></a>
             </div>
         </div>
         <nav class="header__nav">
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="#">Диваны  </a>
-                    <div class="innerMenuContainer">
-                        <!--<div class="flexContainer">-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны и кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шезлонги</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кушетки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Софы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Табуретки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Скамьи</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">консоли</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">игровые столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Письменные столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Секретеры</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Мебель для хранения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Книжные шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стенки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Тумбы для гостиной</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Комоды</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Серванты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Витрины</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Спальни и детские</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кровати</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">прикроватные тумбочки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Платяные шкафы-->
-                        <!--комоде</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы-купе-->
-                        <!--</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Изголовья кроватей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Туалетные столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Детская мебель</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Ванная комната для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Дети спальни украшения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Светильники для детской-->
-                        <!--текстиль для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<span class="closeInnerMenu"></span>-->
-                    </div>
+                    <a href="#">
+                        <span>Дом и образ жизни</span></a>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="">Аксессуары для напитков</a>
+                        </li>
+                        <li class="menuInner__item"><a href="">Барные и винные принадлежности</a></li>
+                        <li class="menuInner__item"><a href="">Здоровье и красота</a></li>
+                        <li class="menuInner__item"><a href="">Ланч боксы</a></li>
+                        <li class="menuInner__item">
+                            <a href="">Инструменты и фонари</a>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuInner__item"><a href="">Кухонные принадлежности</a></li>
+                        <li class="menuInner__item"><a href="">Мягкие игрушки</a></li>
+                        <li class="menuInner__item"><a href="">Подарки для детей</a></li>
+                        <li class="menuInner__item"><a href="">Подарки для дома</a></li>
+                        <li class="menuInner__item"><a href="">Подарки для женщин</a></li>
+                        <li class="menuInner__item"><a href="">Свечи и арома наборы</a></li>
+                        <li class="menuInner__item"><a href="">Сад</a></li>
+                        <li class="menuInner__item">
+                            <a href="">Фоторамки</a></li>
+                    </ul>
                 </li>
-                <li class="menu__item"><a href="#">Стулья</a></li>
-                <li class="menu__item"><a href="#">Столы</a></li>
-                <li class="menu__item"><a href="#">Хранение</a></li>
-                <li class="menu__item"><a href="#">Кровати</a></li>
-                <li class="menu__item"><a href="#">Аксессуары</a></li>
-                <li class="menu__item"><a href="#">Новый дизайн</a></li>
-                <li class="menu__item"><a href="#">Специальное предложение</a></li>
+                <li class="menu__item"><a href="">Отдых и спорт</a></li>
+                <li class="menu__item"><a href="">Офис и бизнес</a></li>
+                <li class="menu__item"><a href="">Путешествия</a></li>
+                <li class="menu__item"><a href="">Текстиль</a></li>
+                <li class="menu__item"><a href="">Флешки</a></li>
+                <li class="menu__item"><a href="">Эко продукция</a></li>
+                <li class="menu__item"><a href="#">Электроника</a></li>
             </ul>
         </nav>
         <div class="header__top">
             <div class="container">
                 <div class="header__topInner">
                     <ul class="topMenu">
-                        <li class="topMenu__item"><a href="#">Бренды</a></li>
-                        <li class="topMenu__item"><a href="#">О нас</a></li>
-                        <li class="topMenu__item"><a href="#">Работайте с нами</a></li>
+                        <li class="topMenu__item"><a href="#">О компании</a></li>
+                        <li class="topMenu__item"><a href="#">Новости </a></li>
                         <li class="topMenu__item"><a href="#">Контакты</a></li>
                     </ul>
                     <div class="header__topRight">
-                        <a href="#" class="privateOffice">Личный кабинет</a>
                         <ul class="language">
-                            <li class="language__item active"><a href="#">en</a></li>
-                            <li class="language__item"><a href="#">ru</a></li>
+                            <li class="language__item active"><a href="#">uk</a></li>
+                            <li class="language__item"><a href="#">en</a></li>
+                            <li class="language__item"><a href="#">pl</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -161,19 +116,20 @@
 </header>
 <main class="content">
     <div class="catalog catalog_inTop">
-        <div class="breadCrumbs">
-            <ul class="breadCrumbs__list">
-                <li class="breadCrumbs__list-item"><a href="#">Все категории</a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Дом</a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Диваны и кресла </a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Диваны</a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Tipoe | Fabric sofa</a></li>
-            </ul>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Все категории</a></li>
+                    <li class="breadcrumb-item"><a href="#">Отдых и спорт</a></li>
+                    <li class="breadcrumb-item"><a href="#">Сумки-холодильники</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Сумка-холодильник, цвет синий</a></li>
+                </ol>
+            </nav>
         </div>
         <section class="product">
             <div class="container">
-                <div class="flexGridDesktop">
-                    <div class="product__left col-lg-12 col-sm-12 col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="product__left col-sm-12 col-md-8 col-lg-8">
                         <div class="product__slider">
                             <div class="slickFor">
                                 <div class="slickFor__item"><img src="../images/cat/cat1.jpg" alt="cat img"/></div>
@@ -311,7 +267,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__right col-lg-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="product__right col-sm-12 col-md-4 col-lg-4">
                         <a href="#" class="brandLogo"></a>
                         <div class="product__titleWrap">
                             <h1 class="product__title">TIPTOE | Fabric sofa</h1>

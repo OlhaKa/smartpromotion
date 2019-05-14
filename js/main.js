@@ -1,7 +1,7 @@
 var header = {
     toggleHeaderMenu: function () {
         $('.menuToggleBtn').on('click', function () {
-            $('.slideMobBlock').toggleClass('open');
+            $('.slideMobBlock').slideToggle('slow');
             $('.innerMenuContainer').slideUp();
         });
     },
@@ -59,16 +59,17 @@ var header = {
     }
 };
 
-$('body').on('click', function (e) {
-    if ($('.slideMobBlock').hasClass('open') &&
-        e.target.className != 'menuToggleBtn') {
-            $('.slideMobBlock').removeClass('open')
-    }
-});
+
+
+// $('body').on('click', function (e) {
+//     if ($('.slideMobBlock').hasClass('open') &&
+//         e.target.className != 'menuToggleBtn' ) {
+//             $('.slideMobBlock').removeClass('open')
+//     }
+// });
 
 
 getMenuMiddle();
-
 function getMenuMiddle() {
     var halfMenuItems = Math.ceil($('.header__nav .menu .menu__item').length / 2);
     var elems = $('.header__nav .menu').children();
@@ -80,16 +81,45 @@ function getMenuMiddle() {
     });
 }
 
-// getElementsPrevPrixe();
-// function  getElementsPrevPrixe() {
+hideMenuArrows();
+function hideMenuArrows() {
+    var menuItems = $('.header__nav .menu').children();
+    $.each(menuItems, function () {
+        if ($(this).children(".menuInner").length) {
+            $(this).addClass('withSubmenu')
+        }
+    });
+    var menuInnerItems = $('.header__nav .menuInner').children();
+    $.each(menuInnerItems, function () {
+        if ($(this).children(".subMenu").length) {
+            $(this).addClass('withSubmenu')
+        }
+    });
+
+}
+
+toggleMobileInnerMenu();
+function toggleMobileInnerMenu() {
+    $(".menu__item a").on('click', function () {
+        $(this).siblings('.menuInner').slideToggle('slow');
+    })
+}
+
+toggleMobileSubMenu();
+function toggleMobileSubMenu() {
+    $(".menuInner__item a").on('click', function () {
+        $(this).siblings('.subMenu').slideToggle('slow');
+    })
+}
+
+// getElementsPrevPrice();
+// function  getElementsPrevPrice() {
 //     $('.previous_price').each (function () {
 //         if (!$(this).text().trim().length) {
 //             $(this).addClass("withoutPrice");
 //         }
 //     })
 // }
-
-// if ($(''))
 
 var catalog = {
     sortedOptions: function () {
@@ -121,6 +151,7 @@ var catalog = {
         });
     }
 };
+
 $(function () {
     var browserW = $(window);
     header.toggleHeaderMenu();
