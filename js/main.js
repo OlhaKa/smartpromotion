@@ -23,7 +23,8 @@ var header = {
             }
         });
     },
-    menu: function (browserW) {
+
+        menu: function (browserW) {
         browserW.on('resize', function () {
             // if (browserW.width() > 1199) {
             //     $('.menu__item ').hover(function () {
@@ -112,6 +113,11 @@ function toggleMobileSubMenu() {
     })
 }
 
+
+$('#more_tel_btn').popover({
+    
+});
+
 // getElementsPrevPrice();
 // function  getElementsPrevPrice() {
 //     $('.previous_price').each (function () {
@@ -149,7 +155,8 @@ var catalog = {
             $(this).closest('.filtersItem').toggleClass('open');
             $(this).closest('.filtersItem').children('.filtersItem__inner').slideToggle();
         });
-    }
+    },
+
 };
 
 $(function () {
@@ -212,7 +219,15 @@ $(function () {
         slidesToScroll: 1,
         asNavFor: '.slickFor',
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
     $('.thumbnailSlider').slick({
         slidesToShow: 4,
@@ -243,6 +258,5 @@ $(function () {
             }
         ]
     });
-
 });
 
