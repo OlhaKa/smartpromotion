@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../font/fontawesome-5.7.2/all.css">
     <script src="../js/modernizr.js"></script>
 </head>
@@ -40,7 +41,9 @@
         <div class="searchContent">
             <div id="wrap">
                 <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Что ищем?"><input id="search_submit" value="Rechercher" type="submit">   <i class="fal fa-search"></i>
+                    <input id="search" name="search" type="text" placeholder="Что ищем?">
+                    <input id="search_submit" value="Rechercher" type="submit">
+                    <img src="../images/svg/magnifying-glass-browser.svg" alt="">
                 </form>
 
             </div>
@@ -48,110 +51,68 @@
                 <a href="#" class="favoriteProduct">
                     <span class="counter">10</span>
                 </a>
-                <a href="#" class="basketBtn"></a>
             </div>
         </div>
         <nav class="header__nav">
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="#">Диваны  </a>
-                    <div class="innerMenuContainer">
-                        <!--<div class="flexContainer">-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны и кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шезлонги</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кушетки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Софы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Табуретки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Скамьи</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">консоли</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">игровые столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Письменные столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Секретеры</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Мебель для хранения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Книжные шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стенки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Тумбы для гостиной</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Комоды</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Серванты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Витрины</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Спальни и детские</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кровати</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">прикроватные тумбочки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Платяные шкафы-->
-                        <!--комоде</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы-купе-->
-                        <!--</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Изголовья кроватей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Туалетные столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Детская мебель</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Ванная комната для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Дети спальни украшения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Светильники для детской-->
-                        <!--текстиль для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<span class="closeInnerMenu"></span>-->
-                    </div>
+                    <a href="#">
+                        <span>Дом и образ жизни</span>
+                    </a>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Аксессуары для напитков</span>
+
+                            </a>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Барные и винные принадлежности</a></li>
+                        <li class="menuInner__item"><a href="#">Здоровье и красота</a></li>
+                        <li class="menuInner__item"><a href="#">Ланч боксы</a></li>
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Инструменты и фонари</span></a>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Кухонные принадлежности</a></li>
+                        <li class="menuInner__item"><a href="#">Мягкие игрушки</a></li>
+                        <li class="menuInner__item"><a href="#">Подарки для детей</a></li>
+                        <li class="menuInner__item"><a href="#">Подарки для дома</a></li>
+                        <li class="menuInner__item"><a href="#">Подарки для женщин</a></li>
+                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a></li>
+                        <li class="menuInner__item"><a href="#">Сад</a></li>
+                        <li class="menuInner__item">
+                            <a href="#">Фоторамки</a></li>
+                    </ul>
                 </li>
-                <li class="menu__item"><a href="#">Стулья</a></li>
-                <li class="menu__item"><a href="#">Столы</a></li>
-                <li class="menu__item"><a href="#">Хранение</a></li>
-                <li class="menu__item"><a href="#">Кровати</a></li>
-                <li class="menu__item"><a href="#">Аксессуары</a></li>
-                <li class="menu__item"><a href="#">Новый дизайн</a></li>
-                <li class="menu__item"><a href="#">Специальное предложение</a></li>
+                <li class="menu__item"><a href="#"><span>Отдых и спорт</span></a></li>
+                <li class="menu__item"><a href="#"><span>Путешествия</span></a></li>
+                <li class="menu__item"><a href="#"><span>Текстиль</span></a></li>
+                <li class="menu__item"><a href=""><span>Флешки</span></a></li>
+                <li class="menu__item"><a href="#"><span>Эко продукция</span></a></li>
+                <li class="menu__item"><a href="#"><span>Электроника</span></a></li>
             </ul>
         </nav>
+
+
         <div class="header__top">
             <div class="container">
                 <div class="header__topInner">
                     <ul class="topMenu">
-                        <li class="topMenu__item"><a href="#">Бренды</a></li>
-                        <li class="topMenu__item"><a href="#">О нас</a></li>
-                        <li class="topMenu__item"><a href="#">Работайте с нами</a></li>
+                        <li class="topMenu__item"><a href="#">О компании</a></li>
+                        <li class="topMenu__item"><a href="#">Новости </a></li>
                         <li class="topMenu__item"><a href="#">Контакты</a></li>
                     </ul>
                     <div class="header__topRight">
-                        <a href="#" class="privateOffice">Личный кабинет</a>
                         <ul class="language">
-                            <li class="language__item active"><a href="#">en</a></li>
-                            <li class="language__item"><a href="#">ru</a></li>
+                            <li class="language__item active"><a href="#">uk</a></li>
+                            <li class="language__item"><a href="#">en</a></li>
+                            <li class="language__item"><a href="#">pl</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -161,41 +122,116 @@
 </header>
 <main class="content content_cat ">
     <section class="catalog catalog_inTop">
-        <div class="breadCrumbs">
-            <ul class="breadCrumbs__list">
-                <li class="breadCrumbs__list-item"><a href="#">Все категории</a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Диваны и кресла</a></li>
-                <li class="breadCrumbs__list-item"><a href="#">Диваны</a></li>
-            </ul>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Все категории</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Дом</a></li>
+                </ol>
+            </nav>
         </div>
         <div class="container">
             <div class="catalog__content">
                 <div class="row">
+                    <div class="filter-show-btn col-12">
+                        <i class="fas fa-filter"></i>
+                    </div>
                     <div class="catalog__filter col-lg-4">
-                        <div class="filters">
-                            <div class="closeBtn">Каталог и фильтры <i class="closeBtnCross"></i></div>
-                            <div class="filtersItem">
-                                <span class="filtersItem__title">Категории <i class="slideFilters"></i></span>
-                                <div class="filtersItem__inner">
-                                    <ul class="filtersList">
-                                        <li>
-                                            <a href="#">Дом</a>
-                                            <ul class="filtersList__level1">
-                                                <li>
-                                                    <a href="#">Диваны и кресла</a>
-                                                    <ul class="filtersList__level2">
-                                                        <li>
-                                                            Диваны
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="nav-side-menu">
+                            <div class="side-menu-item"
+                                 data-toggle="collapse"
+                                 data-target="#navMenuСollapse"
+                                 aria-expanded="false"
+                                 aria-controls="navMenuСollapse">
+                                <span>категории</span>
+                                <span class="collapse_icon"></span>
                             </div>
+                            <div class="menu-list collapse" id="navMenuСollapse">
+                                <ul id="menu-content" class="menu-content collapse show">
+                                    <li data-toggle="collapse" data-target="#home_items" class="collapsed">
+                                        <a href="https://bootstrap-4.ru/docs/4.3.1/components/collapse/"> Дом </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="home_items">
+                                        <li><a href="#">Диваны и кресла</a></li>
+                                        <li><a href="#">Столы и стулья</a></li>
+                                        <li><a href="#">Мебель для хранения</a></li>
+                                        <li><a href="#">Детская мебель</a></li>
+
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#bathroom" class="collapsed">
+                                        <a href="#"> Ванная </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="bathroom">
+                                        <li>Полотенца</li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#kitchen" class="collapsed">
+                                        <a href="#"> Кухня </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="kitchen">
+                                        <li>Посуда</li>
+                                        <li>Приборы</li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#garden" class="collapsed">
+                                        <a href="#"> Сад </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="garden">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#office" class="collapsed">
+                                        <a href="#"> Офис </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="office">
+                                        <li>Бумага</li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#business" class="collapsed">
+                                        <a href="#"> Деловая </a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="business ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#lighting" class="collapsed">
+                                        <a href="#">Освещение</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="lighting ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#health" class="collapsed">
+                                        <a href="#">Здоровье</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="health ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#accessories" class="collapsed">
+                                        <a href="#">Аксессуары</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="accessories ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#equipment" class="collapsed">
+                                        <a href="#">Техника</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="equipment ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#building" class="collapsed">
+                                        <a href="#">Строительство</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="building ">
+                                        <li></li>
+                                    </ul>
+                                    <li data-toggle="collapse" data-target="#facing" class="collapsed">
+                                        <a href="#">Отделка</a>
+                                    </li>
+                                    <ul class="sub-menu collapse" id="facing ">
+                                        <li></li>
+                                    </ul>
+                                 </ul>
+                            </div>
+                        </div>
+                        <div class="filters">
+<!--                            <div class="closeBtn">Каталог и фильтры <i class="closeBtnCross"></i></div>-->
                             <div class="filtersItem">
-                            <span class="filtersItem__title">Материалы<i class="slideFilters"></i>
+                            <span class="filtersItem__title">Бренды<i class="slideFilters"></i>
                             </span>
                                 <div class="filtersItem__inner">
                                     <div class="brandContainer">
@@ -258,50 +294,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filtersItem">
-                            <span class="filtersItem__title">Материалы
-                                <i class="slideFilters"></i>
-                            </span>
-                                <div class="filtersItem__inner"></div>
-                            </div>
-                            <div class="filtersItem">
-                            <span class="filtersItem__title">Стиль
-                                <i class="slideFilters"></i>
-                            </span>
-                                <div class="filtersItem__inner"></div>
-                            </div>
-                            <div class="filtersItem">
-                            <span class="filtersItem__title">Число мест
-                                <i class="slideFilters"></i>
-                            </span>
-                                <div class="filtersItem__inner">
-                                </div>
-                            </div>
-                            <div class="filtersItem">
-                            <span class="filtersItem__title">Бренды
-                                <i class="slideFilters"></i>
-                            </span>
-                                <div class="filtersItem__inner"></div>
-                            </div>
-                            <div class="filtersItem">
-                                <span class="filtersItem__title">Цена<i class="slideFilters"></i></span>
-                                <div class="filtersItem__inner ">
-                                    <div id="slider-range"></div>
-                                    <p class="range">
-                                        <label for="amount" class="amount">От</label>
-                                        <input type="text" id="amount" readonly>
-                                        <label for="amountMax" class="amount">До</label>
-                                        <input type="text" id="amountMax" readonly>
-                                    </p>
-                                    <a href="#" class="btn priceBtn">
-                                        Применить
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="catalog__productsList col-lg-8">
-                        <h1 class="content__title">Диваны</h1>
+                        <h1 class="content__title">дом</h1>
                         <div class="catalog__descr">
                             <p>Четко представлять, как должно выглядеть помещение, нужно еще до начала ремонтных работ.
                                 Лучше всего подготовить детальные чертежи: планы до и после реконструкции, план
@@ -316,169 +312,264 @@
                                 командой,
                                 оговорите и пропишите точные сроки работ по всем этапам.</p>
                         </div>
-                        <div class="sortedBlock">
-                            <div class="sortedBtn btn toggleOption">Каталог и фильтры
-                            </div>
-                            <div class="sortedBtn  btn j-sorted">Сортировка
-                            </div>
-                            <div class="checkBoxWrap">
-                                <div class="closeBtn">сортировка <i class="closeBtnCross"></i>
-                                </div>
-                                <div class="checkBoxItemFlex">
-                                    <div class="filtersItem">
-                                        <span class="filtersItem__title">Показывать товары<i
-                                                class="slideFilters"></i></span>
-                                        <div class="radioContWrap">
-                                            <div class="radioCont">
-                                                <input type="radio" id="d-name78" name="selectorS">
-                                                <label for="d-name78">По названию (Аа–Яz)</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="u-name" name="selectorS">
-                                                <label for="u-name">По названию (Яz–Аа)</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="u-price" name="selectorS">
-                                                <label for="u-price">По возрастанию цены</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="d-price" name="selectorS">
-                                                <label for="d-price">По убыванию цены</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="filtersItem">
-                                    <span class="filtersItem__title">Товаров на странице<i class="slideFilters"></i>
-                                    </span>
-                                        <div class="radioContWrap">
-                                            <div class="radioCont">
-                                                <input type="radio" id="xs-count" name="selectorP">
-                                                <label for="xs-count">15</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="sm-count" name="selectorP">
-                                                <label for="sm-count">30</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="md-count" name="selectorP">
-                                                <label for="md-count">45</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="lg-count" name="selectorP">
-                                                <label for="lg-count">60</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="filtersItem">
-                                    <span class="filtersItem__title">Сортировка
-                                    <i class="slideFilters"></i>
-                                    </span>
-                                        <div class="radioContWrap">
-                                            <div class="radioCont">
-                                                <input type="radio" id="d-name10" name="selectorS1">
-                                                <label for="d-name10">По названию (Аа–Яz)</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="u-name11" name="selectorS1">
-                                                <label for="u-name11">По названию (Яz–Аа)</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="u-price12" name="selectorS1">
-                                                <label for="u-price12">По возрастанию цены</label>
-                                            </div>
-                                            <div class="radioCont">
-                                                <input type="radio" id="d-price12" name="selectorS1">
-                                                <label for="d-price12">По убыванию цены</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="catalog__thumbnails">
                             <div class="flexGrid">
                                 <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
                                     <a href="#" class="thumbnail__link">
                                         <div class="thumbnail__image">
                                             <img src="../images/cat/cat1.jpg" alt="...">
                                         </div>
                                         <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">
-                                                <span class="new">12 565 грн</span>
-                                                <span class="old">12 565 грн</span>
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний, темно-синяя</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
                                             </div>
                                         </div>
                                     </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
                                     <a href="#" class="like"></a>
                                 </article>
                                 <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
                                     <a href="#" class="thumbnail__link">
                                         <div class="thumbnail__image">
                                             <img src="../images/cat/cat1.jpg" alt="...">
                                         </div>
                                         <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">12 565 грн</div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="like"></a>
-                                </article>
-                                <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                    <a href="#" class="thumbnail__link">
-                                        <div class="thumbnail__image">
-                                            <img src="../images/cat/cat1.jpg" alt="...">
-                                        </div>
-                                        <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">12 565 грн</div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="like"></a>
-                                </article>
-                                <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                    <a href="#" class="thumbnail__link">
-                                        <div class="thumbnail__image">
-                                            <img src="../images/cat/cat1.jpg" alt="...">
-                                        </div>
-                                        <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">
-                                                <span class="new">12 565 грн</span>
-                                                <span class="old">12 565 грн</span>
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
+
+                                                <div class="previous_price">
+                                                    400
+                                                </div>
+                                                <div class="previous_currency">
+                                                    грн
+                                                </div>
                                             </div>
                                         </div>
                                     </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
                                     <a href="#" class="like"></a>
                                 </article>
                                 <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
                                     <a href="#" class="thumbnail__link">
                                         <div class="thumbnail__image">
                                             <img src="../images/cat/cat1.jpg" alt="...">
                                         </div>
                                         <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">12 565 грн</div>
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
+
+                                                <div class="previous_price">
+                                                    400
+                                                </div>
+                                                <div class="previous_currency">
+                                                    грн
+                                                </div>
+                                            </div>
                                         </div>
                                     </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
                                     <a href="#" class="like"></a>
                                 </article>
                                 <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
                                     <a href="#" class="thumbnail__link">
                                         <div class="thumbnail__image">
                                             <img src="../images/cat/cat1.jpg" alt="...">
                                         </div>
                                         <div class="thumbnail__caption">
-                                            <h3>CILA | Chair with casters</h3>
-                                            <p>Partista - диван</p>
-                                            <div class="thumbnail__price">12 565 грн</div>
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
+
+                                                <div class="previous_price">
+                                                    400
+                                                </div>
+                                                <div class="previous_currency">
+                                                    грн
+                                                </div>
+                                            </div>
                                         </div>
                                     </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="like"></a>
+                                </article>
+                                <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
+                                    <a href="#" class="thumbnail__link">
+                                        <div class="thumbnail__image">
+                                            <img src="../images/cat/cat1.jpg" alt="...">
+                                        </div>
+                                        <div class="thumbnail__caption">
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
+
+                                                <div class="previous_price">
+                                                    400
+                                                </div>
+                                                <div class="previous_currency">
+                                                    грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="like"></a>
+                                </article>
+                                <article class="thumbnail thumbnail_hEffect col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="simple-slider-hover"></div>
+                                    <a href="#" class="thumbnail__link">
+                                        <div class="thumbnail__image">
+                                            <img src="../images/cat/cat1.jpg" alt="...">
+                                        </div>
+                                        <div class="thumbnail__caption">
+                                            <p>Женская рубашка поло с короткими рукавами Prater, цвет cиний</p>
+                                            <div class="price">
+                                                <div class="current_price">
+                                                    505
+                                                </div>
+                                                <div class="current_currency">
+                                                    грн
+                                                </div>
+
+                                                <div class="previous_price">
+                                                    400
+                                                </div>
+                                                <div class="previous_currency">
+                                                    грн
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="color_select">
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                        <div class="option">
+                                            <a href=""></a>
+                                        </div>
+                                    </div>
                                     <a href="#" class="like"></a>
                                 </article>
                             </div>
@@ -506,65 +597,45 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer__inner col-lg-11">
-                <div class="row">
-                    <section class="footer__left col-sm-6 col-md-6 col-lg-4">
-                        <h1 class="footer__title">каталог</h1>
-                        <div class="footer__leftInner">
-                            <ul class="footer__menu">
-                                <li class="footer__menuItem"><a href="#"> Дом</a></li>
-                                <li class="footer__menuItem"><a href="#"> Ванная</a></li>
-                                <li class="footer__menuItem"><a href="#">Кухня</a></li>
-                                <li class="footer__menuItem"><a href="#"> Сад </a></li>
-                                <li class="footer__menuItem"><a href="#">Офис</a></li>
-                                <li class="footer__menuItem"><a href="#">Деловая</a></li>
-                                <li class="footer__menuItem"><a href="#">Освещение</a></li>
-                                <li class="footer__menuItem"><a href="#">Здоровье</a></li>
-                                <li class="footer__menuItem"><a href="#">Аксессуары </a></li>
-                                <li class="footer__menuItem"><a href="#">Техника</a></li>
-                                <li class="footer__menuItem"><a href="#">Строительство</a></li>
-                                <li class="footer__menuItem"><a href="#">Отделка</a></li>
-                            </ul>
-                            <ul class="footer__menu">
-                                <li class="footer__menuItem footer__menuItem_title"><a href="#">Личный кабинет</a></li>
-                                <li class="footer__menuItem"><a href="#">Категории</a></li>
-                                <li class="footer__menuItem"><a href="#">Бренды</a></li>
-                                <li class="footer__menuItem"><a href="#">Новости</a></li>
-                                <li class="footer__menuItem"><a href="#"> Статьи</a></li>
-                                <li class="footer__menuItem"><a href="#">О нас</a></li>
-                                <li class="footer__menuItem"><a href="#">Работайте с нами</a></li>
-                                <li class="footer__menuItem"><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="footer__right col-sm-6 col-md-6 col-lg-8">
-                        <div class="footer__rightInner">
-                            <div class="footer__form">
-                                <h2 class="footer__title">Узнавайте о новых
-                                    коллекциях и трендах</h2>
-                                <form action="#">
-                                    <input type="search" title="search" name="s" placeholder="Ваша электронная почта">
-                                    <button class="btn_primary">Подписаться</button>
-                                </form>
-                            </div>
-                            <div class="social">
-                                <h2 class="footer__title">Следите за нами в соцсетях</h2>
-                                <ul class="social__list">
-                                    <li class="social__list"><a href="#"></a></li>
-                                    <li class="social__list"><a href="#" class="youtube"></a></li>
-                                    <li class="social__list"><a href="#" class="twitter"></a></li>
-                                    <li class="social__list"><a href="#" class="facebook"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+            <div class="col-sm-12 col-md-4 footer_logo align-self-end">
+                <a href="">
+                    <img src="../images/svg/Smart_logo_2.svg" alt="">
+                </a>
+            </div>
+            <div class="footer_links col-sm-12 col-md-8">
+                <div class="footer_cont">
+                    <ul>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                    </ul>
+                    <div class="footer_mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:viktor.lapshin@gmail.com">
+                            viktor.lapshin@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="social_block">
+                    <div class="social_link">
+                        <a href="" class="instgr"></a>
+                        <a href="" class="fbook"></a>
+                    </div>
+                    <div class="dev_signature">
+                        created by
+                        <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
+                            KODA
+                        </a>
+                        2019
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -142,6 +142,10 @@ $(window).resize(function() {
     }
 });
 
+$(".filter-show-btn .fa-filter").click(function() {
+    $(".catalog__filter").animate( {"left": "0px"}, 400, "swing" );
+});
+
 
 // getElementsPrevPrice();
 // function  getElementsPrevPrice() {
