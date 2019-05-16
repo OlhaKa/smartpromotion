@@ -115,8 +115,33 @@ function toggleMobileSubMenu() {
 
 
 $('#more_tel_btn').popover({
-    
+    trigger: 'manual',
+}).hover(function () {
+    $(this).popover('show');
 });
+
+$(window).resize(function() {
+    if ($(window).width() < 960) {
+        $('#more_tel_btn').popover({
+            trigger: 'manual',
+        }).click(function () {
+            $(this).popover('toggle');
+        })
+    }
+    else {
+        $('#more_tel_btn').popover({
+            trigger: 'manual',
+        }).hover(function () {
+            $(this).popover('show');
+        });
+        $('body').on('click', function (e) {
+            if (e.target.className != 'popover-body') {
+                $('#more_tel_btn').popover('hide');
+            }
+        });
+    }
+});
+
 
 // getElementsPrevPrice();
 // function  getElementsPrevPrice() {
