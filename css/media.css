@@ -84,6 +84,12 @@
         line-height: 18px;
         margin-top: 5px;
     }
+
+    .beside_news a span,
+    .beside_news a:before,
+    .beside_news a:after {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -482,7 +488,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 997px) {
     .header__top {
         background-color: #f0f0f0;
     }
@@ -573,6 +579,10 @@
     .brandContainer {
         height: 250px;
         overflow-y: scroll;
+    }
+
+    .beside_news .far {
+        display: none;
     }
 }
 
