@@ -640,18 +640,18 @@ display: none;
 /* ____________ header end ____________*/
 /*_________________  todo bread crumbs _____________________*/
 
-.catalog .breadcrumb {
+.breadcrumb {
   background-color: #ffffff;
   padding: 10px 0;
   margin-bottom: 0;
 }
 
-.catalog .breadcrumb a {
+.breadcrumb a {
   color: #555555;
   font-size: 14px;
 }
 
-.catalog .breadcrumb .active a {
+.breadcrumb .active a {
   color: #000000;
   font-weight: 600;
 }
@@ -1266,7 +1266,8 @@ display: none;
     line-height: 24px;
 }
 
-.catalog .content__title {
+.catalog .content__title,
+.news .content__title {
   text-align: left;
     margin-bottom: 33px;
 }
@@ -2657,3 +2658,33 @@ textarea.input {
 /*________________ input group, btn end _____________________*/
 
 
+/*---------NEWS PAGE----------*/
+
+.news {
+  padding-top: 38px;
+}
+
+.news_list img {
+  width: 100%;
+}
+
+.news_list .news_head {
+  font-family: 'Gotham Pro Regular';
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.news_list .news_head:hover {
+  color: #00abc3;
+}
+
+.news_list p {
+  margin-top: 17px;
+  line-height: 24px;
+}
+
+.news_list .row {
+  margin-bottom: 44px;
+}

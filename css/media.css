@@ -73,6 +73,17 @@
         background: #ffffff;
         z-index: 9;
     }
+
+    .news_list .news_head {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .news_list p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 5px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -138,7 +149,10 @@
         font-size: 24px;
         margin-bottom: 10px;
     }
-
+    .news_list img,
+    .news_list p {
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 576px) {
