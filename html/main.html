@@ -30,7 +30,38 @@
                         <li><a href="">+38 (063) 260 26 00</a></li>
                     </ul>
                 </div>
+                    <a role="button"
+                       id="more_tel_btn"
+                       class="more_tel_btn"
+                       data-container="body"
+                       data-offset="0,10px"
+                       data-html="true"
+                       data-toggle="popover"
+                       data-placement="bottom"
+                       data-trigger="focus"
+                       data-content= "<ul>
+                                                <li>
+                                                    <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
+                                                </li>
+                                            </ul>">
+                        <img src="../images/svg/telephone-blue.svg" alt="">
+                    </a>
                 <a href="#" class="logo"></a>
+                <div class="searchContent">
+                    <div id="wrap">
+                        <form action="" autocomplete="off">
+                            <input id="search" name="search" type="text" placeholder="Что ищем?">
+                            <input id="search_submit" value="Rechercher" type="submit">
+                            <img src="../images/svg/magnifying-glass-browser.svg" alt="">
+                        </form>
+
+                    </div>
+                    <div class="basketFavoriteBtn">
+                        <a href="#" class="favoriteProduct">
+                            <span class="counter">10</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="menuToggleBtn">
                     <span></span>
                 </div>
@@ -40,21 +71,6 @@
 
     </div>
     <div class="slideMobBlock">
-        <div class="searchContent">
-            <div id="wrap">
-                <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Что ищем?">
-                    <input id="search_submit" value="Rechercher" type="submit">
-                    <img src="../images/svg/magnifying-glass-browser.svg" alt="">
-                </form>
-
-            </div>
-            <div class="basketFavoriteBtn">
-                <a href="#" class="favoriteProduct">
-                    <span class="counter">10</span>
-                </a>
-            </div>
-        </div>
         <nav class="header__nav">
             <ul class="menu">
                 <li class="menu__item">
@@ -194,7 +210,7 @@
                 <div class="flexGrid">
                     <article class="thumbnail thumbnail_hEffect col-xs-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="simple-slider-hover"></div>
-                        <a href="#" class="thumbnail__link">
+                        <a href="" class="thumbnail__link">
                             <div class="thumbnail__image">
                                 <img src="../images/cat/cat1.jpg" alt="...">
 
@@ -760,6 +776,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>

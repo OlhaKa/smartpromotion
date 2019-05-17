@@ -5,21 +5,21 @@ var header = {
             $('.innerMenuContainer').slideUp();
         });
     },
-    insertSearchBlock: function (browserW) {
-        browserW.on('resize', function () {
-            if (browserW.width() > 991) {
-                $('.searchContent').insertAfter('.logo');
-            } else {
-                $('.searchContent').insertBefore('.header__nav');
-            }
-        });
-    },
+    // insertSearchBlock: function (browserW) {
+    //     browserW.on('resize', function () {
+    //         if (browserW.width() > 991) {
+    //             $('.searchContent').insertAfter('.logo');
+    //         } else {
+    //             $('.searchContent').insertBefore('.header__nav');
+    //         }
+    //     });
+    // },
     insertHeaderTop: function (browserW) {
         browserW.on('resize', function () {
-            if (browserW.width() > 991) {
+            if (browserW.width() > 998) {
                 $('.header__top').insertBefore('.header__bottom');
             } else {
-                $('.header__top').insertAfter('.header__nav');
+                // $('.header__top').insertAfter('.header__nav');
             }
         });
     },
@@ -103,6 +103,7 @@ toggleMobileInnerMenu();
 function toggleMobileInnerMenu() {
     $(".menu__item a").on('click', function () {
         $(this).siblings('.menuInner').slideToggle('slow');
+        $(this).children("span").toggleClass('opened');
     })
 }
 
@@ -110,22 +111,18 @@ toggleMobileSubMenu();
 function toggleMobileSubMenu() {
     $(".menuInner__item a").on('click', function () {
         $(this).siblings('.subMenu').slideToggle('slow');
+        $(this).children("span").toggleClass('opened');
     })
 }
 
 
-$('#more_tel_btn').popover({
-    trigger: 'manual',
-}).hover(function () {
-    $(this).popover('show');
-});
-
-$(window).resize(function() {
+// -------POPOVERS SETUP--------
+$(window).on("load", function() {
     if ($(window).width() < 960) {
         $('#more_tel_btn').popover({
             trigger: 'manual',
         }).click(function () {
-            $(this).popover('toggle');
+            $(this).popover('show');
         })
     }
     else {
@@ -133,13 +130,19 @@ $(window).resize(function() {
             trigger: 'manual',
         }).hover(function () {
             $(this).popover('show');
+            console.log(123)
         });
-        $('body').on('click', function (e) {
-            if (e.target.className != 'popover-body') {
-                $('#more_tel_btn').popover('hide');
-            }
-        });
+
     }
+});
+
+// -----HIDE POPOVERS BY CLICK OUTSIDE------
+$(document).on('click', function (e) {
+    $('[data-toggle="popover"],[data-original-title]').each(function () {
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false
+        }
+    });
 });
 
 $(".filter-show-btn .fa-filter").click(function() {
@@ -147,14 +150,20 @@ $(".filter-show-btn .fa-filter").click(function() {
 });
 
 
-// getElementsPrevPrice();
-// function  getElementsPrevPrice() {
-//     $('.previous_price').each (function () {
-//         if (!$(this).text().trim().length) {
-//             $(this).addClass("withoutPrice");
-//         }
-//     })
-// }
+// ------ACTIVE MENU ITEM--submenu opened-------
+activeNavMenuStyle();
+function activeNavMenuStyle() {
+    $(".menuInner").hover(
+        function() {
+            $(this).siblings('a').addClass('hovered')
+        }
+    );
+    $(".menuInner").mouseleave (
+        function() {
+            $(this).siblings('a').removeClass('hovered')
+        }
+    );
+}
 
 var catalog = {
     sortedOptions: function () {
@@ -191,7 +200,7 @@ var catalog = {
 $(function () {
     var browserW = $(window);
     header.toggleHeaderMenu();
-    header.insertSearchBlock(browserW);
+    // header.insertSearchBlock(browserW);
     header.insertHeaderTop(browserW);
     header.menu(browserW);
 
@@ -216,7 +225,7 @@ $(function () {
 
     $('.bigBanner_slider').slick({
         autoplay: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         cssEase: 'ease-in-out',

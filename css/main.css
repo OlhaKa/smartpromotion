@@ -79,10 +79,11 @@ input#search_submit:focus {
 .searchContent input[type="text"]:focus {
   width: 300px;
   z-index: 1;
-  background: transparent;
   border-bottom: 1px solid #BBB;
   cursor: text;
   font-size: 16px;
+  position: static;
+  background: #ffffff;
 }
 .searchContent input[type="submit"] {
   height: 40px;
@@ -128,8 +129,6 @@ input#search_submit:focus {
   position:absolute;
   left: 0;
   top: 4px;
-  /*font-size:20px;*/
-  /*transform:rotate(90deg);*/
 }
 
 
@@ -142,9 +141,16 @@ input#search_submit:focus {
   text-transform: uppercase;
 }
 
+.header .more_tel_btn {
+    border: none;
+    background: #ffffff;
+    outline: none;
+}
+
 .footer_cont ul li a {
   color: #fff;
 }
+
 .footer_cont ul li a:hover {
   text-decoration: none;
 }
@@ -302,6 +308,7 @@ h2 {
 .header__bottom .top {
   display: flex;
   align-items: center;
+    flex-direction: row;
   justify-content: space-between;
   padding: 20px 0;
 }
@@ -310,7 +317,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  border-top: 1px solid #cdd1d1;
 }
 .header .basketFavoriteBtn {
   /*width: 35%;*/
@@ -355,6 +361,11 @@ h2 {
   list-style: none;
   padding-top: 20px;
 }
+
+.topMenu__item {
+    display: inline-block;
+}
+
 .topMenu__item > a {
   display: block;
   padding: 20px 0;
@@ -677,24 +688,34 @@ display: none;
   bottom: 34px;
   text-align: center;
 }
-/*.slider .slick-dots li {*/
-/*  display: inline-block;*/
-/*  margin: 0 5px;*/
-/*}*/
-/*.slider .slick-dots li button {*/
-/*  width: 20px;*/
-/*  height: 20px;*/
-/*  background: transparent;*/
-/*  border-radius: 50%;*/
-/*  font-size: 0;*/
-/*  border: 1px solid #69abbf;*/
-/*}*/
-/*.slider .slick-dots li button:focus {*/
-/*  outline: none;*/
-/*}*/
-/*.slider .slick-dots li.slick-active button {*/
-/*  background-color: #69abbf;*/
-/*}*/
+
+.bigBanner .slick-dots {
+    list-style: none;
+    position: absolute;
+    right: 9px;
+    top: calc(50% - 25px);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.bigBanner .slick-dots li button {
+    width: 40px;
+    height: 2px;
+    background: #000000;
+    transition: all 0.5s;
+    display: inline-block;
+    border: none;
+    font-size: 0px;
+    line-height: 3px;
+    cursor: pointer;
+}
+
+.bigBanner .slick-dots li.slick-active button {
+    width: 54px;
+    height: 3px;
+    background: #00abc3;
+}
 
 .smallBanner .arrowsBox,
 .bigBanner .bigBanner_arrowsBox {
@@ -1987,7 +2008,7 @@ display: none;
 }
 
 .thumbnailSlider .slick-list {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .thumbnailSlider .thumbnail {
@@ -2637,6 +2658,11 @@ textarea.input {
 
 .news_list .row {
   margin-bottom: 44px;
+}
+
+.news .pagination {
+    justify-content: center;
+    margin-bottom: 45px;
 }
 
 /*---------NEWS INSIDE PAGE----------*/
