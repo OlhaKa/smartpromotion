@@ -295,10 +295,10 @@ h2 {
 }
 .header .logo {
   display: block;
-  width: 130px;
+  width: 127px;
   height: 49px;
   background: url("../images/svg/Smart_logo_1.svg")  no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .header__top {
   padding: 0 15px;
@@ -608,16 +608,22 @@ display: none;
   width: 100%;
   min-height: 31px;
   /*position: relative;*/
+  padding: 6px 20px 14px 11px;
 }
 
 .menu .menu__item .menuInner .menuInner__item a {
   font-size: 15px;
-  padding: 6px 20px 14px 11px;
   border-left: 4px solid #ffffff;
-  display: block;
   color: #000000;
 }
 
+.inner_menu_btn,
+.sub_menu_btn {
+  display: none;
+  height: 15px;
+  width: 30px;
+  margin-left: 20px;
+}
 
 .rightSide .menuInner {
   right: 0;
@@ -1900,7 +1906,7 @@ display: none;
   transform: rotate(90deg);
   background: url("../images/svg/arr_grey.svg") no-repeat center;
   font-size: 0;
-  z-index: 9;
+  z-index: 8;
 }
 .product .slickFor .slick-arrow:focus {
   outline: none;
