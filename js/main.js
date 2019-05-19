@@ -2,7 +2,6 @@ var header = {
     toggleHeaderMenu: function () {
         $('.menuToggleBtn').on('click', function () {
             $('.slideMobBlock').slideToggle('slow');
-            // $('.innerMenuContainer').slideUp();
             
         });
     },
@@ -21,44 +20,14 @@ var header = {
         })
     },
     
-
-    // insertSearchBlock: function (browserW) {
-    //     browserW.on('resize', function () {
-    //         if (browserW.width() > 991) {
-    //             $('.searchContent').insertAfter('.logo');
-    //         } else {
-    //             $('.searchContent').insertBefore('.header__nav');
-    //         }
-    //     });
-    // },
     insertHeaderTop: function (browserW) {
         browserW.on('resize', function () {
             if (browserW.width() > 998) {
                 $('.header__top').insertBefore('.header__bottom');
-            } else {
-                // $('.header__top').insertAfter('.header__nav');
             }
         });
     },
 
-    menu: function (browserW) {
-        browserW.on('resize', function () {
-            // if (browserW.width() > 1199) {
-            //     $('.menu__item ').hover(function () {
-            //         $(this).closest('.slideMobBlock').toggleClass('shadow');
-            //         $(this).children('.innerMenuContainer').stop().slideToggle(300);
-            //     });
-            // } else {
-            //     $('.closeInnerMenu').on('click', function () {
-            //         $(this).closest('.innerMenuContainer').slideUp();
-            //     });
-            //     $('.menu__item a').on('click', function () {
-            //         $(this).siblings('.innerMenuContainer').slideDown();
-            //     });
-            // }
-        });
-
-    },
     fixedHeader: function () {
 
         var stickyOffset = $('.slideMobBlock').offset().top;
@@ -76,16 +45,6 @@ var header = {
         });
     }
 };
-
-
-
-// $('body').on('click', function (e) {
-//     if ($('.slideMobBlock').hasClass('open') &&
-//         e.target.className != 'menuToggleBtn' ) {
-//             $('.slideMobBlock').removeClass('open')
-//     }
-// });
-
 
 getMenuMiddle();
 function getMenuMiddle() {
@@ -136,18 +95,17 @@ function toggleMobileSubMenu() {
 // -------POPOVERS SETUP--------
 $(window).on("load", function () {
     if ($(window).width() < 960) {
-        $('#more_tel_btn').popover({
+        $('[data-toggle="popover"]').popover({
             trigger: 'manual',
         }).click(function () {
             $(this).popover('show');
         })
     }
     else {
-        $('#more_tel_btn').popover({
+        $('[data-toggle="popover"]').popover({
             trigger: 'manual',
         }).hover(function () {
             $(this).popover('show');
-            console.log(123)
         });
 
     }
@@ -217,11 +175,8 @@ var catalog = {
 $(function () {
     var browserW = $(window);
     header.toggleHeaderMenu();
-    // header.insertSearchBlock(browserW);
     header.scrollHeaderMenu();
     header.insertHeaderTop(browserW);
-    header.menu(browserW);
-
     catalog.sortedOptions(browserW);
     catalog.closeSortedOption();
     catalog.filtersToggle();

@@ -154,6 +154,26 @@
     .beside_news a:after {
         display: none;
     }
+
+    .sliderContainer .bigBanner_arrowsBox,
+    .sliderContainer .arrowsBox {
+        display: none;
+    }
+
+    .bigBanner__item h3 {
+        padding: 20px 0 0 20px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .bigBanner__item p {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .bigBanner__item .discount {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -228,6 +248,10 @@
         position: absolute;
         width: 235px;
     }
+
+    main.content {
+        margin-top: 101px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -264,10 +288,6 @@
         width: 100%;
     }
 
-    .sliderContainer .bigBanner_arrowsBox,
-    .sliderContainer .arrowsBox {
-        display: none;
-    }
 
     .thumbnailSection__wrap article.thumbnail {
         margin-bottom: 30px;
@@ -306,10 +326,6 @@
         padding-right: 0;
     }
 
-    .header .basketFavoriteBtn {
-        /*width: 10%;*/
-    }
-
     .header__nav {
         max-width: 1170px;
         margin: 0 auto;
@@ -340,7 +356,6 @@
 
     .header__top.hide,
     .header__bottom.hide {
-        /* position: absolute; */
         top: -100%;
     }
 
@@ -401,14 +416,18 @@
     .subMenu {
         position: absolute;
         width: max-content;
-        box-shadow: 0 0 8px 1px rgba(105, 171, 191, 0.8);
+        box-shadow: 3px 0px 5px 0px rgba(105, 171, 191, 0.5);
         left: 100%;
-        margin-top: -40px;
+        margin-top: -22px;
         padding: 0;
         visibility: hidden;
         opacity: 0;
         transition: all .4s ease;
         display: none;
+    }
+
+    .rightSide .subMenu {
+        box-shadow: -1px 0px 5px 0px rgba(105, 171, 191, 0.5);
     }
 
     .menuInner__item {
@@ -427,14 +446,6 @@
         text-decoration: none;
     }
 
-    /*.menuInner__item:first-child {*/
-    /*  margin-bottom: 10px;*/
-    /*}*/
-    /*.menuInner__item:first-child > a {*/
-    /*  font-size: 16px;*/
-    /*  font-weight: bold;*/
-    /*  color: #000;*/
-    /*}*/
     .toggleOption {
         display: none;
     }
@@ -765,15 +776,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    /*.breadCrumbs__list-item {*/
-    /*    margin-bottom: 0;*/
-    /*}*/
-    /*.breadCrumbs__list {*/
-    /*    flex-direction: row;*/
-    /*}*/
-    /*.breadCrumbs__list-item {*/
-    /*    margin-bottom: 0;*/
-    /*}*/
+
     .sortedBlock {
         display: flex;
         align-items: center;
