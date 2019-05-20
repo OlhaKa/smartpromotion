@@ -145,6 +145,7 @@ input#search_submit:focus {
     border: none;
     background: #ffffff;
     outline: none;
+    cursor: pointer;
 }
 
 .footer_cont ul li a {
@@ -272,12 +273,6 @@ h2 {
   margin-bottom: .8em;
 }
 
-
-/*.container {*/
-/*max-width: 1170px;*/
-/*width: 100%;*/
-/*}*/
-
 .flexGrid {
   display: flex;
   flex-wrap: wrap;
@@ -295,10 +290,10 @@ h2 {
 }
 .header .logo {
   display: block;
-  width: 130px;
+  width: 127px;
   height: 49px;
   background: url("../images/svg/Smart_logo_1.svg")  no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .header__top {
   padding: 0 15px;
@@ -319,7 +314,6 @@ h2 {
   justify-content: flex-end;
 }
 .header .basketFavoriteBtn {
-  /*width: 35%;*/
   padding: 0 15px;
   display: flex;
   align-items: center;
@@ -339,10 +333,7 @@ h2 {
   list-style: none;
   position: relative;
 }
-/* .menu__item {
-  border-top: 1px solid #cdd1d1;
-  background-color: #f0f0f0;
-} */
+
 .menu__item > a {
   position: relative;
   display: block;
@@ -427,6 +418,7 @@ h2 {
 .menuToggleBtn {
   display: block;
   width: 40px;
+  cursor: pointer;
 }
 .menuToggleBtn > span {
   display: block;
@@ -475,21 +467,11 @@ h2 {
   display: block;
   width: 47px;
   color: #000;
-  /* font-size: 40px; */
   height: 34px;
   background: url("../images/basket-05.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*.basketBtn:hover{*/
-/*text-decoration:none;*/
-/*}*/
-/*.basketBtn:before{*/
-/*content: "\f291";*/
-/*font-family: 'Font Awesome 5 Pro';*/
-/*color: #606060;*/
-/*font-size: 32px;*/
-/*}*/
 
 .form {
   width: 65%;
@@ -534,37 +516,6 @@ h2 {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
-  
-  /* .menu__item:hover > a:after {
-    width: 100%;
-    transition: .3s;
-  }
-  .menu__item > a {
-    display: block;
-    font-size: 16px;
-  }
-  .menu__item > a:after {
-    position: static;
-    display: block;
-    content: ' ';
-    width: 0;
-    height: 1px;
-    background-color: #69abbf;
-    transition: .3s;
-  }
-  .menu__item > a:hover {
-    text-decoration: none;
-  }
-  .menu__item > a:hover:after {
-    width: 100%;
-    transition: .3s;
-  } */
- 
-  /* .menu__item:after {
-    display: none;
-  } */
-}
 .innerMenuContainer {
   display: none;
   position: absolute;
@@ -607,30 +558,27 @@ display: none;
   clear: both;
   width: 100%;
   min-height: 31px;
-  /*position: relative;*/
+  padding: 6px 20px 14px 11px;
 }
 
 .menu .menu__item .menuInner .menuInner__item a {
   font-size: 15px;
-  padding: 6px 20px 14px 11px;
   border-left: 4px solid #ffffff;
-  display: block;
   color: #000000;
+  padding-left: 5px;
 }
 
+.inner_menu_btn,
+.sub_menu_btn {
+  display: none;
+  height: 15px;
+  width: 30px;
+  margin-left: 20px;
+}
 
 .rightSide .menuInner {
   right: 0;
   left: auto;
-}
-
-.menu .menu__item.rightSide .menuInner .menuInner__item a {
-  border-left: none;
-  border-right: 4px solid #ffffff;
-}
-
-.menu .menu__item.rightSide .menuInner .menuInner__item a:hover {
-  border-right: 4px solid #00abc3;
 }
 
 .menu .menu__item.rightSide .menuInner__item:hover > .subMenu {
@@ -962,23 +910,7 @@ display: none;
   color: #000;
   min-height: 40px;
 }
-/*.thumbnail__caption p:hover {*/
-/*  text-decoration: none;*/
-/*}*/
-/*.thumbnail__price {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: flex-start;*/
-/*  margin-top: 16px;*/
-/*  font-weight: bold;*/
-/*  font-size: 18px;*/
-/*  color: #000;*/
-/*}*/
-/*.thumbnail__price .old {*/
-/*  font-size: 14px;*/
-/*  color: #ff006c;*/
-/*  margin-left: 20px;*/
-/*}*/
+
 .thumbnail .menuInner__item {
   display: block;
   padding-bottom: 0;
@@ -1030,7 +962,6 @@ display: none;
   opacity: 1;
   visibility: visible;
   z-index: 999;
-  /*transform: translate3d(0, 0, 0);*/
 }
 
 .thumbnail_hEffect .simple-slider-hover {
@@ -1044,7 +975,6 @@ display: none;
   visibility: hidden;
   opacity: 0;
   background-color: #fff;
-  margin-bottom: -55px;
   -moz-transform: translate3d(0, 0, 0) scale(0.9);
   -webkit-transform: translate3d(0, 0, 0) scale(0.9);
   transform: translate3d(0, 0, 0) scale(0.9);
@@ -1056,16 +986,6 @@ display: none;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-
-/*.thumbnail_hEffect:hover {*/
-/*  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);*/
-/*}*/
-
-/*.thumbnail_hEffect:hover .color_select {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  flex-wrap: wrap;*/
-/*}*/
 
 .thumbnail .color_select {
   display: flex;
@@ -1418,7 +1338,6 @@ display: none;
     .nav-side-menu {
         position: relative;
         width: 100%;
-        margin-bottom: 10px;
     }
     .nav-side-menu .toggle-btn {
         display: block;
@@ -1533,14 +1452,14 @@ display: none;
   margin-top: 25px;
 }
 .filtersItem .slideFilters,
-.nav-side-menu .collapse_icon {
+.nav-side-menu .slideFilters {
   display: block;
   width: 10px;
   height: 2px;
   background-color: #00abc3;
 }
 .filtersItem .slideFilters:after,
-.side-menu-item.collapsed .collapse_icon:after {
+.side-menu-item.collapsed .slideFilters:after {
   display: block;
   width: 10px;
   height: 2px;
@@ -1550,7 +1469,7 @@ display: none;
   background-color: #00abc3;
 }
 .filtersItem.open .slideFilters:after,
-.side-menu-item:not(.collapsed) .collapse_icon:after{
+.side-menu-item:not(.collapsed) .slideFilters:after{
   transform: rotate(0deg);
   transition: transform .3s;
 }
@@ -1786,12 +1705,6 @@ display: none;
   font-size: 18px;
   font-weight: bold;
 }
-/*.product .btn_basketIcon {*/
-/*  background-image: url(../images/basket-01.svg);*/
-/*  background-size: 35px 35px;*/
-/*  background-repeat: no-repeat;*/
-
-/*}*/
 
 .product .tel_list {
   display: flex;
@@ -1900,7 +1813,7 @@ display: none;
   transform: rotate(90deg);
   background: url("../images/svg/arr_grey.svg") no-repeat center;
   font-size: 0;
-  z-index: 9;
+  z-index: 8;
 }
 .product .slickFor .slick-arrow:focus {
   outline: none;
@@ -2011,8 +1924,13 @@ display: none;
   padding: 0 5px;
 }
 
+.thumbnailSlider .slick-track {
+  height: 380px;
+}
+
 .thumbnailSlider .thumbnail {
   float: left;
+  height: calc(100% - 10px);
 }
 .thumbnailSlider .thumbnail__link {
   padding-left: 0;
