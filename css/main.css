@@ -1094,7 +1094,8 @@ display: none;
   text-align: left;
 }
 
-.thumbnailSection .simple-slider-hover {
+.thumbnailSection .simple-slider-hover,
+.catalog__thumbnails  .simple-slider-hover {
   margin-bottom: -55px;
 }
 
@@ -1481,7 +1482,7 @@ display: none;
   background-color: #00abc3;
 }
 .filtersItem .slideFilters:after,
-.side-menu-item.collapsed .slideFilters:after {
+.side-menu-item[aria-expanded='false'] .slideFilters:after {
   display: block;
   width: 10px;
   height: 2px;
@@ -1491,7 +1492,7 @@ display: none;
   background-color: #00abc3;
 }
 .filtersItem.open .slideFilters:after,
-.side-menu-item:not(.collapsed) .slideFilters:after{
+.side-menu-item[aria-expanded='true'] .slideFilters:after{
   transform: rotate(0deg);
   transition: transform .3s;
 }

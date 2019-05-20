@@ -293,6 +293,14 @@
     main.content {
         margin-top: 101px;
     }
+
+    .thumbnailSlider .slick-prev {
+        left: -8px;
+    }
+
+    .thumbnailSlider .slick-next {
+        right: -8px;
+    }
 }
 
 @media screen and (max-width: 576px) {
