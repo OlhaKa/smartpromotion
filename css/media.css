@@ -125,7 +125,6 @@
         margin-top: 20px;
     }
 
-
     .product .tel_list a,
     .mail_btn a,
     .product__description p {
@@ -173,6 +172,10 @@
 
     .bigBanner__item .discount {
         font-size: 20px;
+    }
+
+    .moreCaWrap {
+        margin-top: 20px;
     }
 }
 
@@ -222,11 +225,27 @@
 
     .footer_links {
         flex-direction: column;
-        align-items: flex-start;
+    }
+
+    .footer_logo a {
+        display: inline-block;
+        width: 95px;
+        height: 135px;
     }
 
     .footer .footer_logo {
-        order: 2;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .footer_logo img {
+        max-height: 135px;
+    }
+
+    .footer_cont ul li a,
+    .footer_mail a,
+    .dev_signature {
+        font-size: 14px;
     }
 
     .product__titleWrap h1{

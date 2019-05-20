@@ -574,6 +574,7 @@ display: none;
   height: 15px;
   width: 30px;
   margin-left: 20px;
+  position: relative;
 }
 
 .rightSide .menuInner {
@@ -1087,6 +1088,10 @@ display: none;
 .thumbnailSection .thumbnail__caption h3 {
   font-size: 16px;
   text-align: left;
+}
+
+.thumbnailSection .simple-slider-hover {
+  margin-bottom: -55px;
 }
 
 .articles .thumbnail {
