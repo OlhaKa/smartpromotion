@@ -135,9 +135,14 @@ $(document).on('click', function (e) {
     });
 });
 
-$(".filter-show-btn .fa-filter").click(function () {
-    $(".catalog__filter").animate({ "left": "0px" }, 400, "swing");
+$(".filter-show-btn .text_wrap").click(function () {
+    $(".catalog__filter").toggleClass('show')
 });
+
+setTimeout(function () {
+    $('.leaflet-marker-pane img').attr("src","../images/map_marker.png");
+}, 700);
+
 
 
 // ------ACTIVE MENU ITEM--submenu opened-------

@@ -20,141 +20,193 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__bottom">
-            <div class="container">
-                <div class="top">
-                    <div class="header__cont">
-                        <ul>
-                            <li><a href="">+38 (063) 260 26 00</a></li>
-                            <li><a href="">+38 (063) 260 26 00</a></li>
-                        </ul>
+<header class="header">
+    <div class="header__bottom">
+        <div class="container">
+            <div class="top">
+                <div class="header__cont">
+                    <ul>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                    </ul>
+                </div>
+                <a role="button"
+                   id="more_tel_btn"
+                   class="more_tel_btn"
+                   data-container="body"
+                   data-offset="0,10px"
+                   data-html="true"
+                   data-toggle="popover"
+                   data-placement="auto"
+                   data-trigger="focus"
+                   data-content= "<ul>
+                                                <li>
+                                                    <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
+                                                </li>
+                                            </ul>">
+                    <img src="../images/svg/telephone-blue.svg" alt="">
+                </a>
+                <a href="#" class="logo"></a>
+                <div class="searchContent">
+                    <div id="wrap">
+                        <form action="" autocomplete="off">
+                            <input id="search" name="search" type="text" placeholder="Что ищем?">
+                            <input id="search_submit" value="Rechercher" type="submit">
+                            <img src="../images/svg/magnifying-glass-browser.svg" alt="">
+                        </form>
+
                     </div>
-                    <a role="button" id="more_tel_btn" class="more_tel_btn" data-container="body" data-offset="0,10px"
-                        data-html="true" data-toggle="popover" data-placement="auto" data-trigger="focus" data-content="<ul>
-                                                            <li>
-                                                                <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
-                                                            </li>
-                                                        </ul>">
-                        <img src="../images/svg/telephone-blue.svg" alt="">
+                    <div class="basketFavoriteBtn">
+                        <a href="#" class="favoriteProduct">
+                            <span class="counter">10</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="menuToggleBtn">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="slideMobBlock">
+        <nav class="header__nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#">
+                        <span>Дом и образ жизни</span>
                     </a>
-                    <a href="#" class="logo"></a>
-                    <div class="searchContent">
-                        <div id="wrap">
-                            <form action="" autocomplete="off">
-                                <input id="search" name="search" type="text" placeholder="Что ищем?">
-                                <input id="search_submit" value="Rechercher" type="submit">
-                                <img src="../images/svg/magnifying-glass-browser.svg" alt="">
-                            </form>
-
-                        </div>
-                        <div class="basketFavoriteBtn">
-                            <a href="#" class="favoriteProduct">
-                                <span class="counter">10</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="menuToggleBtn">
-                        <span></span>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="slideMobBlock">
-            <nav class="header__nav">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="#">
-                            <span>Дом и образ жизни</span>
-                        </a>
-                        <span class="inner_menu_btn"></span>
-                        <ul class="menuInner">
-                            <li class="menuInner__item">
-                                <a href="#">
-                                    <span>Аксессуары для напитков</span>
-                                    <span class="sub_menu_btn"></span>
-                                </a>
-                            </li>
-                            <li class="menuInner__item"><a href="#">Барные и винные принадлежности</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Здоровье и красота</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Ланч боксы</a><span class="sub_menu_btn"></span>
-                            </li>
-                            <li class="menuInner__item">
-                                <a href="#">
-                                    <span>Инструменты и фонари</span></a>
-                                <span class="sub_menu_btn"></span>
-                                <ul class="subMenu">
-                                    <li class="subMenu_item"><a href="">Инструменты</a></li>
-                                    <li class="subMenu_item"><a href="">Рулетки</a></li>
-                                    <li class="subMenu_item"><a href="">Фонарики</a></li>
-                                </ul>
-                            </li>
-                            <li class="menuInner__item"><a href="#">Кухонные принадлежности</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Мягкие игрушки</a><span class="sub_menu_btn"></span>
-                            </li>
-                            <li class="menuInner__item"><a href="#">Подарки для детей</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Подарки для дома</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Подарки для женщин</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span
-                                    class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
-                            <li class="menuInner__item">
-                                <a href="#">Фоторамки</a></li>
+                    <span class="inner_menu_btn"></span>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="#">Аксессуары для напитков</a>
                             <span class="sub_menu_btn"></span>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#"><span>
-                                Отдых и спорт</span>
-                        </a>
-                        <span class="inner_menu_btn"></span>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#">
-                            <span>Путешествия</span>
-                        </a>
-                        <span class="inner_menu_btn"></span>
-                    </li>
-                    <li class="menu__item"><a href="#"><span>Текстиль</span> <span class="inner_menu_btn"></span></a>
-                    </li>
-                    <li class="menu__item"><a href="#"><span>Флешки</span> <span class="inner_menu_btn"></span></a></li>
-                    <li class="menu__item"><a href="#"><span>Эко продукция</span> <span
-                                class="inner_menu_btn"></span></a></li>
-                    <li class="menu__item"><a href="#"><span>Электроника</span> <span class="inner_menu_btn"></span></a>
-                    </li>
-                </ul>
-            </nav>
-
-
-            <div class="header__top">
-                <div class="container">
-                    <div class="header__topInner">
-                        <ul class="topMenu">
-                            <li class="topMenu__item"><a href="#">О компании</a></li>
-                            <li class="topMenu__item"><a href="#">Новости </a></li>
-                            <li class="topMenu__item"><a href="#">Контакты</a></li>
-                        </ul>
-                        <div class="header__topRight">
-                            <ul class="language">
-                                <li class="language__item active"><a href="#">uk</a></li>
-                                <li class="language__item"><a href="#">en</a></li>
-                                <li class="language__item"><a href="#">pl</a></li>
-
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Барные и винные принадлежности</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Здоровье и красота</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Ланч боксы</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Инструменты и фонари</a>
+                            <span class="sub_menu_btn"></span>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
                             </ul>
-                        </div>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Кухонные принадлежности</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Мягкие игрушки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Подарки для детей</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Подарки для дома</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">Фоторамки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="#"><span>
+                        Отдых и спорт</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                </li>
+                <li class="menu__item">
+                    <a href="#">
+                        <span>Путешествия</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                </li>
+                <li class="menu__item"><a href="#"><span>Текстиль</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item"><a href="#"><span>Флешки</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item"><a href="#"><span>Эко продукция</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item">
+                    <a href="#">
+                        <span>Электроника</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Аксессуары для напитков</span>
+                                <span class="sub_menu_btn"></span>
+                            </a>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Барные и винные принадлежности</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Здоровье и красота</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Ланч боксы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Инструменты и фонари</span></a>
+                            <span class="sub_menu_btn"></span>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Кухонные принадлежности</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Мягкие игрушки</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для детей</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для дома</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">Фоторамки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="header__top">
+            <div class="container">
+                <div class="header__topInner">
+                    <ul class="topMenu">
+                        <li class="topMenu__item"><a href="#">О компании</a></li>
+                        <li class="topMenu__item"><a href="#">Новости </a></li>
+                        <li class="topMenu__item"><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="header__topRight">
+                        <ul class="language">
+                            <li class="language__item active"><a href="#">uk</a></li>
+                            <li class="language__item"><a href="#">en</a></li>
+                            <li class="language__item"><a href="#">pl</a></li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <main class="content">
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -236,47 +288,47 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 footer_logo align-self-end">
-                    <a href="">
-                        <img src="../images/svg/Smart_logo_2.svg" alt="">
-                    </a>
-                </div>
-                <div class="footer_links col-sm-12 col-md-8">
-                    <div class="footer_cont">
-                        <ul>
-                            <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
-                            <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
-                        </ul>
-                        <div class="footer_mail">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:viktor.lapshin@gmail.com">
-                                viktor.lapshin@gmail.com
-                            </a>
-                        </div>
-                    </div>
-                    <div class="social_block">
-                        <div class="social_link">
-                            <a href="" class="instgr"></a>
-                            <a href="" class="fbook"></a>
-                        </div>
-                        <div class="dev_signature">
-                            created by
-                            <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
-                                KODA
-                            </a>
-                            2019
-                        </div>
-                    </div>
-                </div>
-
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 footer_logo">
+                <a href="">
+                    <img src="../images/svg/Smart_logo_2.svg" alt="">
+                </a>
             </div>
+            <div class="footer_links col-8">
+                <div class="footer_cont">
+                    <ul>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                    </ul>
+                    <div class="footer_mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:viktor.lapshin@gmail.com">
+                            viktor.lapshin@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="social_block">
+                    <div class="social_link">
+                        <a href="" class="instgr"></a>
+                        <a href="" class="fbook"></a>
+                    </div>
+                    <div class="dev_signature">
+                        created by
+                        <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
+                            KODA
+                        </a>
+                        2019
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.js"></script>

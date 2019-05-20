@@ -10,9 +10,9 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../font/fontawesome-5.7.2/all.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media.css">
     <script src="../js/modernizr.js"></script>
 </head>
 <body>
@@ -22,11 +22,42 @@
             <div class="top">
                 <div class="header__cont">
                     <ul>
-                        <li><a href="">+38 (063) 260 26 00</a></li>
-                        <li><a href="">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
                     </ul>
                 </div>
+                <a role="button"
+                   id="more_tel_btn"
+                   class="more_tel_btn"
+                   data-container="body"
+                   data-offset="0,10px"
+                   data-html="true"
+                   data-toggle="popover"
+                   data-placement="auto"
+                   data-trigger="focus"
+                   data-content= "<ul>
+                                                <li>
+                                                    <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
+                                                </li>
+                                            </ul>">
+                    <img src="../images/svg/telephone-blue.svg" alt="">
+                </a>
                 <a href="#" class="logo"></a>
+                <div class="searchContent">
+                    <div id="wrap">
+                        <form action="" autocomplete="off">
+                            <input id="search" name="search" type="text" placeholder="Что ищем?">
+                            <input id="search_submit" value="Rechercher" type="submit">
+                            <img src="../images/svg/magnifying-glass-browser.svg" alt="">
+                        </form>
+
+                    </div>
+                    <div class="basketFavoriteBtn">
+                        <a href="#" class="favoriteProduct">
+                            <span class="counter">10</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="menuToggleBtn">
                     <span></span>
                 </div>
@@ -36,121 +67,135 @@
 
     </div>
     <div class="slideMobBlock">
-        <div class="searchContent">
-            <div id="wrap">
-                <form action="" autocomplete="on">
-                    <input id="search" name="search" type="text" placeholder="Что ищем?"><input id="search_submit" value="Rechercher" type="submit">   <i class="fal fa-search"></i>
-                </form>
-
-            </div>
-            <div class="basketFavoriteBtn">
-                <a href="#" class="favoriteProduct">
-                    <span class="counter">10</span>
-                </a>
-                <a href="#" class="basketBtn"></a>
-            </div>
-        </div>
         <nav class="header__nav">
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="#">Диваны  </a>
-                    <div class="innerMenuContainer">
-                        <!--<div class="flexContainer">-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны и кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Диваны</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кресла</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шезлонги</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кушетки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Софы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Пуфы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стулья</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Табуретки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Скамьи</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">консоли</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">игровые столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Письменные столы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Секретеры</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Мебель для хранения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Книжные шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Стенки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Тумбы для гостиной</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Комоды</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Серванты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Витрины</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Спальни и детские</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Кровати</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">прикроватные тумбочки</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Платяные шкафы-->
-                        <!--комоде</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Шкафы-купе-->
-                        <!--</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Изголовья кроватей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Туалетные столики</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--<div class="innerMenuItem">-->
-                        <!--<ul class="menuInner">-->
-                        <!--<li class="menuInner__item"><a href="#">Детская мебель</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Детские комнаты</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Столы и стулья для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Ванная комната для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Дети спальни украшения</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Светильники для детской-->
-                        <!--текстиль для детей</a></li>-->
-                        <!--<li class="menuInner__item"><a href="#">Еще...</a></li>-->
-                        <!--</ul>-->
-                        <!--</div>-->
-                        <!--</div>-->
-                        <!--<span class="closeInnerMenu"></span>-->
-                    </div>
+                    <a href="#">
+                        <span>Дом и образ жизни</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="#">Аксессуары для напитков</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Барные и винные принадлежности</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Здоровье и красота</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Ланч боксы</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Инструменты и фонари</a>
+                            <span class="sub_menu_btn"></span>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Кухонные принадлежности</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Мягкие игрушки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Подарки для детей</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item">
+                            <a href="#">Подарки для дома</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">Фоторамки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                    </ul>
                 </li>
-                <li class="menu__item"><a href="#">Стулья</a></li>
-                <li class="menu__item"><a href="#">Столы</a></li>
-                <li class="menu__item"><a href="#">Хранение</a></li>
-                <li class="menu__item"><a href="#">Кровати</a></li>
-                <li class="menu__item"><a href="#">Аксессуары</a></li>
-                <li class="menu__item"><a href="#">Новый дизайн</a></li>
-                <li class="menu__item"><a href="#">Специальное предложение</a></li>
+                <li class="menu__item">
+                    <a href="#"><span>
+                        Отдых и спорт</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                </li>
+                <li class="menu__item">
+                    <a href="#">
+                        <span>Путешествия</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                </li>
+                <li class="menu__item"><a href="#"><span>Текстиль</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item"><a href="#"><span>Флешки</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item"><a href="#"><span>Эко продукция</span> <span class="inner_menu_btn"></span></a></li>
+                <li class="menu__item">
+                    <a href="#">
+                        <span>Электроника</span>
+                    </a>
+                    <span class="inner_menu_btn"></span>
+                    <ul class="menuInner">
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Аксессуары для напитков</span>
+                                <span class="sub_menu_btn"></span>
+                            </a>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Барные и винные принадлежности</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Здоровье и красота</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Ланч боксы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">
+                                <span>Инструменты и фонари</span></a>
+                            <span class="sub_menu_btn"></span>
+                            <ul class="subMenu">
+                                <li class="subMenu_item"><a href="">Инструменты</a></li>
+                                <li class="subMenu_item"><a href="">Рулетки</a></li>
+                                <li class="subMenu_item"><a href="">Фонарики</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuInner__item"><a href="#">Кухонные принадлежности</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Мягкие игрушки</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для детей</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для дома</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
+                        <li class="menuInner__item">
+                            <a href="#">Фоторамки</a>
+                            <span class="sub_menu_btn"></span>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+
+
         <div class="header__top">
             <div class="container">
                 <div class="header__topInner">
                     <ul class="topMenu">
-                        <li class="topMenu__item"><a href="#">Бренды</a></li>
-                        <li class="topMenu__item"><a href="#">О нас</a></li>
-                        <li class="topMenu__item"><a href="#">Работайте с нами</a></li>
+                        <li class="topMenu__item"><a href="#">О компании</a></li>
+                        <li class="topMenu__item"><a href="#">Новости </a></li>
                         <li class="topMenu__item"><a href="#">Контакты</a></li>
                     </ul>
                     <div class="header__topRight">
-                        <a href="#" class="privateOffice">Личный кабинет</a>
                         <ul class="language">
-                            <li class="language__item active"><a href="#">en</a></li>
-                            <li class="language__item"><a href="#">ru</a></li>
+                            <li class="language__item active"><a href="#">uk</a></li>
+                            <li class="language__item"><a href="#">en</a></li>
+                            <li class="language__item"><a href="#">pl</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -159,90 +204,45 @@
     </div>
 </header>
 <main class="content">
-    <div class="breadCrumbs">
-        <ul class="breadCrumbs__list">
-            <li class="breadCrumbs__list-item"><a href="#">Все категории</a></li>
-            <li class="breadCrumbs__list-item"><a href="#">Дом</a></li>
-            <li class="breadCrumbs__list-item"><a href="#">Диваны и кресла </a></li>
-            <li class="breadCrumbs__list-item"><a href="#">Диваны</a></li>
-            <li class="breadCrumbs__list-item"><a href="#">Tipoe | Fabric sofa</a></li>
-        </ul>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active"><a href="#">Контакты</a></li>
+            </ol>
+        </nav>
     </div>
+
     <section class="contacts">
         <div class="contacts__top">
             <div class="container">
                 <h1 class="content__title">Контакты</h1>
-                <div class="contacts__sideWrap">
-                    <div class="contacts__left">
+                <div class="contacts__sideWrap row">
+                    <div class="contacts__left col-12 col-xl-6">
                         <div class="contactsDetailsWrap">
-                            <div class="contactsDetails">
-                                <h3 class="contactsDetails__title">Телефоны</h3>
-                                <p>
-                                    +38 (063) 260 26 00<br>
-                                    +38 (063) 260 26 00<br>
-                                    +38 (063) 260 26 00<br>
-                                    +38 (063) 260 26 00<br>
-
-                                </p>
+                            <ul>
+                                <li><a href="tel:+380442225930">+380 (44) 222 59 30</a></li>
+                                <li><a href="tel:+380442272510">+380 (44) 227 25 10</a></li>
+                            </ul>
+                            <div class="cont_address">
+                                03038, Киев, ул. Линейная, 17, оф. 323
                             </div>
-                            <div class="contactsDetails">
-                                <h3 class="contactsDetails__title">Адрес</h3>
-                                <p>
-                                    Украина<br>
-                                    г. Харьков<br>
-                                    Пр. Гагарина, 86
-                                </p>
-                            </div>
-                            <div class="contactsDetails">
-                                <h3 class="contactsDetails__title">Пишите нам на эл. почту</h3>
-                                <p>
-                                    <a href="mailto:info@comoddy.com">info@smartpromotion.com</a>
-                                </p>
+                            <div class="cont_email">
+                                <a href="mailto:info@smartpromotion.com.ua">
+                                    info@smartpromotion.com.ua
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="contacts__right">
-                        <div class="map">
-                            <iframe src="https://snazzymaps.com/embed/8630" width="100%" height="400px"
-                                    style="border:none;"></iframe>
-                        </div>
+                    <div class="contacts__right col-12 col-xl-6">
+
+                        <script type="text/javascript" src="//maps-js.apissputnik.ru/v0.3/loader.js?1PcCoZed5bZ8"></script>
+<!--                        <div class="map">-->
+<!--                            <iframe src="https://snazzymaps.com/embed/8630" width="100%" height="400px"-->
+<!--                                    style="border:none;"></iframe>-->
+<!--                        </div>-->
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="contacts__bottom">
-            <div class="container">
-                <h2 class="content__title">Свяжитесь с нами</h2>
-                <form action="#" class="contacts__form">
-                    <div class="contacts__sideWrap">
-                        <div class="contacts__form_left">
-                            <div class="inputGroup">
-                                <label for="name" class="label">ФИО</label>
-                                <input type="text" id="name" class="input"></div>
-                            <div class="inputGroup">
-                                <label for="email" class="label">E-mail</label>
-                                <input type="email" id="email" class="input"></div>
-                            <div class="inputGroup">
-                                <label for="select" class="label">Тип запроса</label>
-                                <select name="type request" id="select" class="input">
-                                    <option selected="selected">Тип запроса</option>
-                                    <option value="Generic">Generic</option>
-                                    <option value="Commercial">Commercial</option>
-                                    <option value="Technical support">Technical support</option>
-                                    <option value="Ecommerce support">Ecommerce support</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="contacts__form_right">
-                            <div class="inputGroup">
-                                <label for="comments" class="label">Ваш коментарий</label>
-                                <textarea name="comments" id="comments" class="input"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn btn_dark">Отправить</button>
-                </form>
             </div>
         </div>
     </section>
@@ -250,65 +250,45 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="footer__inner col-lg-11">
-                <div class="row">
-                    <section class="footer__left col-sm-6 col-md-6 col-lg-4">
-                        <h1 class="footer__title">каталог</h1>
-                        <div class="footer__leftInner">
-                            <ul class="footer__menu">
-                                <li class="footer__menuItem"><a href="#"> Дом</a></li>
-                                <li class="footer__menuItem"><a href="#"> Ванная</a></li>
-                                <li class="footer__menuItem"><a href="#">Кухня</a></li>
-                                <li class="footer__menuItem"><a href="#"> Сад </a></li>
-                                <li class="footer__menuItem"><a href="#">Офис</a></li>
-                                <li class="footer__menuItem"><a href="#">Деловая</a></li>
-                                <li class="footer__menuItem"><a href="#">Освещение</a></li>
-                                <li class="footer__menuItem"><a href="#">Здоровье</a></li>
-                                <li class="footer__menuItem"><a href="#">Аксессуары </a></li>
-                                <li class="footer__menuItem"><a href="#">Техника</a></li>
-                                <li class="footer__menuItem"><a href="#">Строительство</a></li>
-                                <li class="footer__menuItem"><a href="#">Отделка</a></li>
-                            </ul>
-                            <ul class="footer__menu">
-                                <li class="footer__menuItem footer__menuItem_title"><a href="#">Личный кабинет</a></li>
-                                <li class="footer__menuItem"><a href="#">Категории</a></li>
-                                <li class="footer__menuItem"><a href="#">Бренды</a></li>
-                                <li class="footer__menuItem"><a href="#">Новости</a></li>
-                                <li class="footer__menuItem"><a href="#"> Статьи</a></li>
-                                <li class="footer__menuItem"><a href="#">О нас</a></li>
-                                <li class="footer__menuItem"><a href="#">Работайте с нами</a></li>
-                                <li class="footer__menuItem"><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="footer__right col-sm-6 col-md-6 col-lg-8">
-                        <div class="footer__rightInner">
-                            <div class="footer__form">
-                                <h2 class="footer__title">Узнавайте о новых
-                                    коллекциях и трендах</h2>
-                                <form action="#">
-                                    <input type="search" title="search" name="s" placeholder="Ваша электронная почта">
-                                    <button class="btn btn_primary">Подписаться</button>
-                                </form>
-                            </div>
-                            <div class="social">
-                                <h2 class="footer__title">Следите за нами в соцсетях</h2>
-                                <ul class="social__list">
-                                    <li class="social__list"><a href="#"></a></li>
-                                    <li class="social__list"><a href="#" class="youtube"></a></li>
-                                    <li class="social__list"><a href="#" class="twitter"></a></li>
-                                    <li class="social__list"><a href="#" class="facebook"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+            <div class="col-4 footer_logo">
+                <a href="">
+                    <img src="../images/svg/Smart_logo_2.svg" alt="">
+                </a>
+            </div>
+            <div class="footer_links col-8">
+                <div class="footer_cont">
+                    <ul>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                    </ul>
+                    <div class="footer_mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:viktor.lapshin@gmail.com">
+                            viktor.lapshin@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="social_block">
+                    <div class="social_link">
+                        <a href="" class="instgr"></a>
+                        <a href="" class="fbook"></a>
+                    </div>
+                    <div class="dev_signature">
+                        created by
+                        <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
+                            KODA
+                        </a>
+                        2019
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 <script src="../js/slick.min.js"></script>
 <script src="../js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
