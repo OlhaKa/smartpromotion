@@ -2043,6 +2043,9 @@ display: none;
   padding: 38px 0;
 }
 
+.leaflet-control-container .leaflet-top {
+  z-index: 95;
+}
 
 .contactsDetails {
   width: 50%;
@@ -2054,9 +2057,6 @@ display: none;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: normal;
-}
-.contactsDetails .cont_address {
-
 }
 
 .contactsDetails a {
@@ -2088,6 +2088,7 @@ display: none;
 
 .contactsDetailsWrap .cont_email:before {
   content: '\f0e0';
+  left: -5px;
 }
 
 .contactsDetailsWrap .cont_email a {
@@ -2634,4 +2635,3 @@ textarea.input {
 .beside_news a:hover .far {
   color: #00abc3;
 }
-
