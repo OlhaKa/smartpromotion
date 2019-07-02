@@ -568,6 +568,10 @@ h2 {
 
 }
 
+.menuInner.open {
+    display: block;
+}
+
 .subMenu .subMenu_item {
     min-height: 32px;
 }
@@ -1383,6 +1387,13 @@ h2 {
     display: none;
     margin-bottom: 0;
 }
+
+.close-menu-btn {
+    float: right;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
 .nav-side-menu li a {
     text-decoration: none;
     color: #000000;
@@ -1445,6 +1456,28 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.menu__item.withSubmenu .inner_menu_btn:after,
+.menuInner__item.withSubmenu .sub_menu_btn:after {
+    content: "\f13a";
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: #00abc3;
+    transition: .3s;
+    line-height: 18px;
+}
+
+.menu__item.withSubmenu .inner_menu_btn.opened:after,
+.menuInner__item.withSubmenu > .sub_menu_btn.opened:after {
+    transform: rotate(180deg);
+}
+
+.menu__item.withSubmenu > .inner_menu_btn,
+.menuInner__item.withSubmenu .sub_menu_btn {
+    display: inline-block;
+    position: relative;
 }
 
 /*------ CATALOG SIDEBAR NAV MENU END----------*/
@@ -2899,8 +2932,11 @@ textarea.input {
     left: 0;
     width: 100%;
     transform: translateY(44px);
-    bottom: 0;
     overflow-y: auto;
+}
+
+.catalog-toggle-block.fixed.opened {
+    bottom: 0;
 }
 
 .catalog-toggle-block.fixed::-webkit-scrollbar-track

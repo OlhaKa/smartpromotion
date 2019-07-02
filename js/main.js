@@ -26,8 +26,9 @@ $(document).ready(function () {
     });
 
 // ======MENU TOGGLE========
-    $('#menu-toggler').click(function () {
-        $('.menu-content').slideToggle()
+    $('#menu-toggler, .close-menu-btn').click(function () {
+        $('.menu-content').slideToggle();
+        $('.catalog-toggle-block').toggleClass('opened')
     });
 
 

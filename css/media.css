@@ -25,28 +25,7 @@
         display: inline;
     }
 
-    .menu__item.withSubmenu .inner_menu_btn:after,
-    .menuInner__item.withSubmenu .sub_menu_btn:after {
-        content: "\f13a";
-        font-family: 'Font Awesome 5 Pro';
-        position: absolute;
-        left: 5px;
-        top: 2px;
-        color: #00abc3;
-        transition: .3s;
-        line-height: 18px;
-    }
 
-    .menu__item.withSubmenu .inner_menu_btn.opened:after,
-    .menuInner__item.withSubmenu > .sub_menu_btn.opened:after {
-        transform: rotate(180deg);
-    }
-
-    .menu__item.withSubmenu > .inner_menu_btn,
-    .menuInner__item.withSubmenu .sub_menu_btn {
-        display: inline-block;
-        position: relative;
-    }
 
     .error-not_found > .container {
         padding-top: 110px;
