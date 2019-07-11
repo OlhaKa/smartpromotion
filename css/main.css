@@ -568,10 +568,6 @@ h2 {
 
 }
 
-.menuInner.open {
-    display: block;
-}
-
 .subMenu .subMenu_item {
     min-height: 32px;
 }
@@ -656,85 +652,86 @@ h2 {
     font-size: 48px;
 }
 
-.slider .slick-dots {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+.bigBanner .slick-dots, .smallBanner .slick-dots {
     list-style: none;
     position: absolute;
-    width: 100%;
-    bottom: 34px;
-    text-align: center;
-}
-
-.bigBanner .slick-dots {
-    list-style: none;
-    position: absolute;
-    right: 9px;
-    top: calc(50% - 25px);
-    text-align: right;
+    display: flex;
     padding: 0;
-    margin: 0;
+    margin: -30px 0 0 0;
+    width: 100%;
+    justify-content: center;
 }
 
-.bigBanner .slick-dots li button {
-    width: 40px;
-    height: 2px;
-    background: #000000;
+.bigBanner .slick-dots li,
+.smallBanner .slick-dots li {
+    margin: 0 5px;
+}
+
+.bigBanner .slick-dots li button,
+.smallBanner .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.7);
     transition: all 0.5s;
     display: inline-block;
     border: none;
     font-size: 0px;
     line-height: 3px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
-.bigBanner .slick-dots li.slick-active button {
-    width: 54px;
-    height: 3px;
+.bigBanner .slick-dots li button:focus,
+.smallBanner .slick-dots li button:focus {
+    outline: none;
+}
+
+.bigBanner .slick-dots li.slick-active button,
+.smallBanner .slick-dots li.slick-active button {
     background: #00abc3;
 }
 
-.smallBanner .arrowsBox,
-.bigBanner .bigBanner_arrowsBox {
-    position: absolute;
-    right: 15px;
-    bottom: 0;
-    display: flex;
-    max-width: 80%;
-}
+/*.smallBanner .arrowsBox,*/
+/*.bigBanner .bigBanner_arrowsBox {*/
+/*    position: absolute;*/
+/*    right: 15px;*/
+/*    bottom: 0;*/
+/*    display: flex;*/
+/*    max-width: 80%;*/
+/*}*/
 
-.sliderContainer .arrowsBox .prev,
-.sliderContainer .arrowsBox .next,
-.sliderContainer .bigBanner_arrowsBox .prev_btn,
-.sliderContainer .bigBanner_arrowsBox .next_btn {
-    display: block;
-    width: 153px;
-    height: 48px;
-    background-color: rgba(255, 255, 255, 0.702);
-    background-position-y: center;
-    background-repeat: no-repeat;
-    max-width: 50%;
-}
+/*.sliderContainer .arrowsBox .prev,*/
+/*.sliderContainer .arrowsBox .next,*/
+/*.sliderContainer .bigBanner_arrowsBox .prev_btn,*/
+/*.sliderContainer .bigBanner_arrowsBox .next_btn {*/
+/*    display: block;*/
+/*    width: 153px;*/
+/*    height: 48px;*/
+/*    background-color: rgba(255, 255, 255, 0.702);*/
+/*    background-position-y: center;*/
+/*    background-repeat: no-repeat;*/
+/*    max-width: 50%;*/
+/*}*/
 
-.sliderContainer .arrowsBox .prev,
-.sliderContainer .bigBanner_arrowsBox .prev_btn {
-    background-image: url("../images/left_arrow.png");
-    background-position-x: right;
-}
+/*.sliderContainer .arrowsBox .prev,*/
+/*.sliderContainer .bigBanner_arrowsBox .prev_btn {*/
+/*    background-image: url("../images/left_arrow.png");*/
+/*    background-position-x: right;*/
+/*}*/
 
-.sliderContainer .arrowsBox .next,
-.sliderContainer .bigBanner_arrowsBox .next_btn {
-    background-image: url("../images/right_arrow.png");
-    background-position-x: left;
-}
+/*.sliderContainer .arrowsBox .next,*/
+/*.sliderContainer .bigBanner_arrowsBox .next_btn {*/
+/*    background-image: url("../images/right_arrow.png");*/
+/*    background-position-x: left;*/
+/*}*/
 
-.sliderContainer .arrowsBox .prev:hover,
-.sliderContainer .arrowsBox .next:hover,
-.sliderContainer .bigBanner_arrowsBox .prev_btn:hover,
-.sliderContainer .bigBanner_arrowsBox .next_btn:hover {
-    background-color: rgba(0, 171, 195, 0.8);
-}
+/*.sliderContainer .arrowsBox .prev:hover,*/
+/*.sliderContainer .arrowsBox .next:hover,*/
+/*.sliderContainer .bigBanner_arrowsBox .prev_btn:hover,*/
+/*.sliderContainer .bigBanner_arrowsBox .next_btn:hover {*/
+/*    background-color: rgba(0, 171, 195, 0.8);*/
+/*}*/
+
 
 
 .bigBanner__item {
@@ -856,7 +853,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 26px;
+    margin-bottom: 15px;
 }
 
 .thumbnail__image img {
@@ -875,7 +872,8 @@ h2 {
 
 .thumbnail__link {
     display: block;
-    padding: 15px;
+    padding: 15px 15px 0 15px;
+    /*margin-bottom: 10px;*/
 }
 
 .thumbnail__link:focus {
@@ -910,7 +908,7 @@ h2 {
 .thumbnail__caption .price {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
     padding-bottom: 10px;
 }
 
@@ -1027,7 +1025,7 @@ h2 {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    background-color: #fff;
+    background-color: transparent;
     -moz-transform: translate3d(0, 0, 0) scale(0.9);
     -webkit-transform: translate3d(0, 0, 0) scale(0.9);
     transform: translate3d(0, 0, 0) scale(0.9);
@@ -1042,24 +1040,11 @@ h2 {
 
 .thumbnail .color_select {
     display: flex;
+    flex-wrap: wrap;
     background: #ffffff;
     width: 100%;
     padding: 5px 15px;
     align-items: center;
-    min-height: 50px;
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
 }
 
 .thumbnail .color_select .option,
@@ -1067,6 +1052,7 @@ h2 {
     width: 24px;
     height: 24px;
     margin-right: 13px;
+    margin-bottom: 5px;
     border: 1px solid #999999;
     transition: .2s;
 }
@@ -1125,6 +1111,13 @@ h2 {
     background-clip: padding-box;
 }
 
+.grid-block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    row-gap: 40px;
+}
+
 .thumbnailSection {
     padding-top: 68px;
     padding-bottom: 28px;
@@ -1149,10 +1142,10 @@ h2 {
     text-align: left;
 }
 
-.thumbnailSection .simple-slider-hover,
-.catalog__thumbnails .simple-slider-hover {
-    margin-bottom: -55px;
-}
+/*.thumbnailSection .simple-slider-hover,*/
+/*.catalog__thumbnails .simple-slider-hover {*/
+/*    margin-bottom: -55px;*/
+/*}*/
 
 .articles .thumbnail {
     height: 340px;
