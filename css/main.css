@@ -905,33 +905,33 @@ h2 {
     max-height: 40px;
 }
 
-.thumbnail__caption .price {
+.thumbnail_hEffect .price {
     display: flex;
     align-items: center;
-    margin-top: 15px;
-    padding-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 15px 15px;
 }
 
-.thumbnail__caption .price .current_price,
-.thumbnail__caption .price .current_currency {
+.thumbnail_hEffect .price .current_price,
+.thumbnail_hEffect .price .current_currency {
     font-weight: 600;
     font-size: 20px;
     color: #00abc3;
     text-transform: uppercase;
 }
 
-.thumbnail__caption .price .current_currency,
-.thumbnail__caption .previous_currency {
+.thumbnail_hEffect .price .current_currency,
+.thumbnail_hEffect .previous_currency {
     margin: 0 10px 0 5px;
 }
 
-.thumbnail__caption .previous_price,
-.thumbnail__caption .previous_currency {
+.thumbnail_hEffect .previous_price,
+.thumbnail_hEffect .previous_currency {
     position: relative;
 }
 
-.thumbnail__caption .previous_price::before,
-.thumbnail__caption .previous_currency::before {
+.thumbnail_hEffect .previous_price::before,
+.thumbnail_hEffect .previous_currency::before {
     display: block;
     content: '';
     position: absolute;
@@ -942,8 +942,8 @@ h2 {
     background: #555555;
 }
 
-.thumbnail__caption .price .previous_price,
-.thumbnail__caption .price .previous_currency {
+.thumbnail_hEffect .price .previous_price,
+.thumbnail_hEffect .price .previous_currency {
     color: #555555;
     font-size: 16px;
     text-transform: uppercase;
@@ -1009,12 +1009,6 @@ h2 {
     transform: translate3d(0, 0, 0);
 }
 
-.thumbnail_hEffect:hover .color_select {
-    opacity: 1;
-    visibility: visible;
-    z-index: 999;
-}
-
 .thumbnail_hEffect .simple-slider-hover {
     display: block;
     content: '';
@@ -1039,22 +1033,25 @@ h2 {
 }
 
 .thumbnail .color_select {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    background: #ffffff;
     width: 100%;
-    padding: 5px 15px;
+    padding: 15px 15px 5px 10px;
     align-items: center;
 }
 
+
 .thumbnail .color_select .option,
 .priceBlock .color_select .option {
-    width: 24px;
-    height: 24px;
-    margin-right: 13px;
-    margin-bottom: 5px;
     border: 1px solid #999999;
     transition: .2s;
+    margin: 0 5px 5px;
+
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 2px;
 }
 
 .priceBlock .color_select .option {
@@ -1075,10 +1072,10 @@ h2 {
     display: block;
 }
 
-.thumbnail .color_select .option:last-child,
-.priceBlock .color_select .option:last-child {
-    margin-right: 0;
-}
+/*.thumbnail .color_select .option:last-child,*/
+/*.priceBlock .color_select .option:last-child {*/
+/*    margin-right: 0;*/
+/*}*/
 
 /*---- GET COLORS ---------*/
 .thumbnail .color_select .option:nth-child(1),
@@ -1914,26 +1911,13 @@ h2 {
     background: #00adc3;
     margin-top: 45px;
     position: relative;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
 }
-
-.mail_btn:before {
-    position: absolute;
-    top: 16px;
-    left: 18px;
-    content: "\f0e0";
-    font-family: 'Font Awesome 5 Pro';
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.mail_btn a {
-    display: block;
-    color: #000000;
-    width: 100%;
-    height: 100%;
-    padding-left: 48px;
-    padding-top: 16px;
+.mail_btn:focus {
+    outline: none;
 }
 
 .product__description p {
@@ -2973,3 +2957,94 @@ textarea.input {
 .content_cat {
     min-height: calc(100vh - 363px);
 }
+.write-to-btn {
+    float: right;
+    border-radius: 0;
+    border: 2px solid #fff;
+    background: transparent;
+
+    height: 30px;
+    margin-top: -7px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.write-to-btn:focus {
+    outline: none;
+}
+.write-to-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*============MAIN PAGE MODAL FORM===========*/
+.modal-header {
+    border: none;
+}
+
+.modal-title {
+    padding: 0 15px;
+    text-align: center;
+    font-family: 'GothamPro-Medium';
+    text-transform: uppercase;
+}
+
+#formModal .close img {
+    height: 25px;
+    width: 25px;
+}
+
+#formModal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formModal input {
+    margin-bottom: 20px;
+    width: 400px;
+    border-radius: 0;
+    min-height: 35px;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 1px solid #999999;
+}
+
+#formModal input:focus {
+    outline: none;
+}
+
+#formModal input::placeholder {
+    font-size: 14px;
+    color: #1b1b1b;
+}
+
+#formModal textarea {
+    border: none;
+    border-bottom: 1px solid #999999;
+    width: 400px;
+    padding: 5px;
+    resize: none;
+}
+
+#formModal textarea:focus {
+    outline: none;
+}
+
+#formModal textarea::placeholder {
+    font-size: 14px;
+    color: #1b1b1b;
+}
+
+#formModal .send-form {
+    margin-top: 15px;
+    width: 264px;
+    height: 48px;
+    background: #00adc3;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*============MAIN PAGE MODAL FORM END===========*/

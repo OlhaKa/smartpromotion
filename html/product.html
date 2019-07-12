@@ -402,11 +402,9 @@
                                     </button>
 
                                 </div>
-                                <div class="mail_btn">
-                                    <a href="mailto:viktor.lapshin@gmail.com">
-                                        viktor.lapshin@gmail.com
-                                    </a>
-                                </div>
+                                <button type="button" class="mail_btn" data-toggle="modal" data-target="#formModal">
+                                   заказать
+                                </button>
                             </div>
                             <div class="product__description">
                                 <p>The pleasure of relaxation. With clean, rational lines, Tiptoe takes contemporary
@@ -778,6 +776,29 @@
             </div>
         </div>
     </main>
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="../images/cross-out.svg" alt="">
+                </button>
+            </div>
+            <h5 class="modal-title">Сумка-холодильник, цвет синий</h5>
+            <div class="modal-body">
+                <form action="">
+                    <input type="text" placeholder="ФИО">
+                    <input type="text" placeholder="Компания">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Эл. почта">
+                    <textarea name="" id="" rows="5" placeholder="Комментарий"></textarea>
+                    <button type="button" class="send-form" >отправить</button>
+                </form>
+            </div>
+    </div>
+</div>
 <footer class="footer">
     <div class="container">
         <div class="row">
