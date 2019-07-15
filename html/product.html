@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
-        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,400italic,600,600italic,700,700italic,800&subset=cyrillic,latin'
-        rel='stylesheet' type='text/css'>
+            href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,400italic,600,600italic,700,700italic,800&subset=cyrillic,latin'
+            rel='stylesheet' type='text/css'>
     <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
     <!-- Place favicon.ico in the root directory -->
 
@@ -21,6 +21,27 @@
 
 <body>
 <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__topInner">
+                <ul class="topMenu">
+                    <li class="top"><a href="#">О компании</a></li>
+                    <li class="top"><a href="#">Новости </a></li>
+                    <li class="top"><a href="#">Нанесение логотипа</a></li>
+                    <li class="top"><a href="#">Вакансии</a></li>
+                    <li class="top"><a href="#">Контакты</a></li>
+                </ul>
+                <div class="header__topRight">
+                    <ul class="language">
+                        <li class="language__item active"><a href="#">uk</a></li>
+                        <li class="language__item"><a href="#">en</a></li>
+                        <li class="language__item"><a href="#">pl</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header__bottom">
         <div class="container">
             <div class="top">
@@ -31,7 +52,7 @@
                     </ul>
                 </div>
                 <a role="button"
-                   id="more_phone_btn"
+                   id="more_tel"
                    class="more_tel_btn"
                    data-container="body"
                    data-offset="0,10px"
@@ -39,7 +60,7 @@
                    data-toggle="popover"
                    data-placement="auto"
                    data-trigger="focus"
-                   data-content= "<ul>
+                   data-content="<ul>
                                                 <li>
                                                     <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
                                                 </li>
@@ -62,720 +83,589 @@
                         </a>
                     </div>
                 </div>
-                <div class="menuToggleBtn">
-                    <span></span>
-                </div>
             </div>
 
         </div>
 
-    </div>
-    <div class="slideMobBlock">
-        <nav class="header__nav">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="#">
-                        <span>Дом и образ жизни</span>
-                    </a>
-                    <span class="inner_menu_btn"></span>
-                    <ul class="menuInner">
-                        <li class="menuInner__item">
-                            <a href="#">Аксессуары для напитков</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Барные и винные принадлежности</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Здоровье и красота</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Ланч боксы</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Инструменты и фонари</a>
-                            <span class="sub_menu_btn"></span>
-                            <ul class="subMenu">
-                                <li class="subMenu_item"><a href="">Инструменты</a></li>
-                                <li class="subMenu_item"><a href="">Рулетки</a></li>
-                                <li class="subMenu_item"><a href="">Фонарики</a></li>
-                            </ul>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Кухонные принадлежности</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Мягкие игрушки</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Подарки для детей</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item">
-                            <a href="#">Подарки для дома</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item">
-                            <a href="#">Фоторамки</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a href="#"><span>
-                        Отдых и спорт</span>
-                    </a>
-                    <span class="inner_menu_btn"></span>
-                </li>
-                <li class="menu__item">
-                    <a href="#">
-                        <span>Путешествия</span>
-                    </a>
-                    <span class="inner_menu_btn"></span>
-                </li>
-                <li class="menu__item"><a href="#"><span>Текстиль</span> <span class="inner_menu_btn"></span></a></li>
-                <li class="menu__item"><a href="#"><span>Флешки</span> <span class="inner_menu_btn"></span></a></li>
-                <li class="menu__item"><a href="#"><span>Эко продукция</span> <span class="inner_menu_btn"></span></a></li>
-                <li class="menu__item">
-                    <a href="#">
-                        <span>Электроника</span>
-                    </a>
-                    <span class="inner_menu_btn"></span>
-                    <ul class="menuInner">
-                        <li class="menuInner__item">
-                            <a href="#">
-                                <span>Аксессуары для напитков</span>
-                                <span class="sub_menu_btn"></span>
-                            </a>
-                        </li>
-                        <li class="menuInner__item"><a href="#">Барные и винные принадлежности</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Здоровье и красота</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Ланч боксы</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item">
-                            <a href="#">
-                                <span>Инструменты и фонари</span></a>
-                            <span class="sub_menu_btn"></span>
-                            <ul class="subMenu">
-                                <li class="subMenu_item"><a href="">Инструменты</a></li>
-                                <li class="subMenu_item"><a href="">Рулетки</a></li>
-                                <li class="subMenu_item"><a href="">Фонарики</a></li>
-                            </ul>
-                        </li>
-                        <li class="menuInner__item"><a href="#">Кухонные принадлежности</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Мягкие игрушки</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Подарки для детей</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Подарки для дома</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Подарки для женщин</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Свечи и арома наборы</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item"><a href="#">Сад</a><span class="sub_menu_btn"></span></li>
-                        <li class="menuInner__item">
-                            <a href="#">Фоторамки</a>
-                            <span class="sub_menu_btn"></span>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-
-        <div class="header__top">
-            <div class="container">
-                <div class="header__topInner">
-                    <ul class="topMenu">
-                        <li class="topMenu__item"><a href="#">О компании</a></li>
-                        <li class="topMenu__item"><a href="#">Новости </a></li>
-                        <li class="topMenu__item"><a href="#">Контакты</a></li>
-                    </ul>
-                    <div class="header__topRight">
-                        <ul class="language">
-                            <li class="language__item active"><a href="#">uk</a></li>
-                            <li class="language__item"><a href="#">en</a></li>
-                            <li class="language__item"><a href="#">pl</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </header>
-    <main class="content">
-        <div class="catalog catalog_inTop">
+<main class="content">
+    <div class="catalog catalog_inTop">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Все категории</a></li>
+                    <li class="breadcrumb-item"><a href="#">Отдых и спорт</a></li>
+                    <li class="breadcrumb-item"><a href="#">Сумки-холодильники</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Сумка-холодильник, цвет синий</a></li>
+                </ol>
+            </nav>
+        </div>
+        <section class="product">
             <div class="container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Все категории</a></li>
-                        <li class="breadcrumb-item"><a href="#">Отдых и спорт</a></li>
-                        <li class="breadcrumb-item"><a href="#">Сумки-холодильники</a></li>
-                        <li class="breadcrumb-item active"><a href="#">Сумка-холодильник, цвет синий</a></li>
-                    </ol>
-                </nav>
-            </div>
-            <section class="product">
-                <div class="container">
-                    <div class="row">
-                        <div class="product__left col-sm-12 col-md-8 col-lg-8">
-                            <div class="product__slider">
-                                <div class="slickFor">
-                                    <div class="slickFor__item"><img src="../images/cat/cat1.jpg" alt="cat img" /></div>
-                                    <div class="slickFor__item"><img src="../images/cat/cat2.jpg" alt="cat img" /></div>
-                                    <div class="slickFor__item"><img src="../images/cat/cat3.jpg" alt="cat img" /></div>
-                                    <div class="slickFor__item"><img src="../images/cat/cat1.jpg" alt="cat img" /></div>
-                                    <div class="slickFor__item"><img src="../images/cat/cat2.jpg" alt="cat img" /></div>
-                                    <div class="slickFor__item"><img src="../images/cat/cat3.jpg" alt="cat img" /></div>
-                                </div>
-
-                                <div class="slider-nav">
-                                    <div><img src="../images/cat/cat1.jpg" alt="cat img 1" /></div>
-                                    <div><img src="../images/cat/cat2.jpg" alt="cat img 1" /></div>
-                                    <div><img src="../images/cat/cat3.jpg" alt="cat img 1" /></div>
-                                    <div><img src="../images/cat/cat1.jpg" alt="cat img 1" /></div>
-                                    <div><img src="../images/cat/cat2.jpg" alt="cat img 1" /></div>
-                                    <div><img src="../images/cat/cat3.jpg" alt="cat img 1" /></div>
-                                </div>
-
+                <div class="row">
+                    <div class="product__left col-sm-12 col-md-8 col-lg-8">
+                        <div class="product__slider">
+                            <div class="slickFor">
+                                <div class="slickFor__item"><img src="../images/cat/cat1.jpg" alt="cat img"/></div>
+                                <div class="slickFor__item"><img src="../images/cat/cat2.jpg" alt="cat img"/></div>
+                                <div class="slickFor__item"><img src="../images/cat/cat3.jpg" alt="cat img"/></div>
+                                <div class="slickFor__item"><img src="../images/cat/cat1.jpg" alt="cat img"/></div>
+                                <div class="slickFor__item"><img src="../images/cat/cat2.jpg" alt="cat img"/></div>
+                                <div class="slickFor__item"><img src="../images/cat/cat3.jpg" alt="cat img"/></div>
                             </div>
-                            <div class="product__accordion">
-                                <div class="filters">
-                                    <div class="filtersItem">
-                                        <span class="filtersItem__title">Описание <i class="slideFilters"></i></span>
-                                        <div class="filtersItem__inner">
-                                            <ul class="filtersList">
-                                                <li>
-                                                    <a href="#">Дом</a>
-                                                    <ul class="filtersList__level1">
-                                                        <li>
-                                                            <a href="#">Диваны и кресла</a>
-                                                            <ul class="filtersList__level2">
-                                                                <li>
-                                                                    Диваны
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
+
+                            <div class="slider-nav">
+                                <div><img src="../images/cat/cat1.jpg" alt="cat img 1"/></div>
+                                <div><img src="../images/cat/cat2.jpg" alt="cat img 1"/></div>
+                                <div><img src="../images/cat/cat3.jpg" alt="cat img 1"/></div>
+                                <div><img src="../images/cat/cat1.jpg" alt="cat img 1"/></div>
+                                <div><img src="../images/cat/cat2.jpg" alt="cat img 1"/></div>
+                                <div><img src="../images/cat/cat3.jpg" alt="cat img 1"/></div>
+                            </div>
+
+                        </div>
+                        <div class="product__accordion">
+                            <div class="filters">
+                                <div class="filtersItem">
+                                    <span class="filtersItem__title">Описание <i class="slideFilters"></i></span>
+                                    <div class="filtersItem__inner">
+                                        <ul class="filtersList">
+                                            <li>
+                                                <a href="#">Дом</a>
+                                                <ul class="filtersList__level1">
+                                                    <li>
+                                                        <a href="#">Диваны и кресла</a>
+                                                        <ul class="filtersList__level2">
+                                                            <li>
+                                                                Диваны
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="filtersItem">
+                                </div>
+                                <div class="filtersItem">
                                         <span class="filtersItem__title">Параметры<i class="slideFilters"></i>
                                         </span>
-                                        <div class="filtersItem__inner">
-                                            <div class="brandContainer">
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand1">
-                                                    <label for="brand1">Mikori</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand2">
-                                                    <label for="brand2">Lapka</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand3">
-                                                    <label for="brand3">De Still</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand4">
-                                                    <label for="brand4">Homestuck</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand5">
-                                                    <label for="brand5">Madoka</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand6">
-                                                    <label for="brand6">Bauhaus</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand7">
-                                                    <label for="brand7">Bauhaus</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand8">
-                                                    <label for="brand8">Frutiger</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand9">
-                                                    <label for="brand9">Frutiger</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand10">
-                                                    <label for="brand10">De Stool</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand11">
-                                                    <label for="brand11">Inwalls</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand12">
-                                                    <label for="brand12">Furnitube</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand13">
-                                                    <label for="brand13">Co-mode</label>
-                                                </div>
-                                                <div class="checkboxItem">
-                                                    <input type="checkbox" id="brand14">
-                                                    <label for="brand14">Lavava</label>
-                                                </div>
+                                    <div class="filtersItem__inner">
+                                        <div class="brandContainer">
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand1">
+                                                <label for="brand1">Mikori</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand2">
+                                                <label for="brand2">Lapka</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand3">
+                                                <label for="brand3">De Still</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand4">
+                                                <label for="brand4">Homestuck</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand5">
+                                                <label for="brand5">Madoka</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand6">
+                                                <label for="brand6">Bauhaus</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand7">
+                                                <label for="brand7">Bauhaus</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand8">
+                                                <label for="brand8">Frutiger</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand9">
+                                                <label for="brand9">Frutiger</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand10">
+                                                <label for="brand10">De Stool</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand11">
+                                                <label for="brand11">Inwalls</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand12">
+                                                <label for="brand12">Furnitube</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand13">
+                                                <label for="brand13">Co-mode</label>
+                                            </div>
+                                            <div class="checkboxItem">
+                                                <input type="checkbox" id="brand14">
+                                                <label for="brand14">Lavava</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="filtersItem">
+                                </div>
+                                <div class="filtersItem">
                                         <span class="filtersItem__title">Каталоги
                                             <i class="slideFilters"></i>
                                         </span>
-                                        <div class="filtersItem__inner"></div>
-                                    </div>
-                                    <div class="filtersItem">
+                                    <div class="filtersItem__inner"></div>
+                                </div>
+                                <div class="filtersItem">
                                         <span class="filtersItem__title">Видео
                                             <i class="slideFilters"></i>
                                         </span>
-                                        <div class="filtersItem__inner"></div>
-                                    </div>
-                                    <div class="filtersItem">
+                                    <div class="filtersItem__inner"></div>
+                                </div>
+                                <div class="filtersItem">
                                         <span class="filtersItem__title">Галерея
                                             <i class="slideFilters"></i>
                                         </span>
-                                        <div class="filtersItem__inner">
-                                        </div>
+                                    <div class="filtersItem__inner">
                                     </div>
-                                    <div class="filtersItem">
+                                </div>
+                                <div class="filtersItem">
                                         <span class="filtersItem__title">Ссылки
                                             <i class="slideFilters"></i>
                                         </span>
-                                        <div class="filtersItem__inner"></div>
-                                    </div>
+                                    <div class="filtersItem__inner"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__right col-sm-12 col-md-4 col-lg-4">
-                            <div class="product__titleWrap">
-                                <h1 class="product__title">Сумка-холодильник, цвет синий</h1>
+                    </div>
+                    <div class="product__right col-sm-12 col-md-4 col-lg-4">
+                        <div class="product__titleWrap">
+                            <h1 class="product__title">Сумка-холодильник, цвет синий</h1>
+                        </div>
+                        <div class="product-vendor">
+                            <b>Артикул</b>
+                            <span>SRT6553412</span>
+                        </div>
+                        <div class="priceBlock">
+                            <div class="price">
+                                <div class="previous_price">
+                                    505 <span>грн</span>
+                                </div>
                             </div>
-                            <div class="priceBlock">
-                                <div class="price">
-                                    <div class="previous_price">
-                                        505 <span>грн</span>
-                                    </div>
+                            <p class="product__price"> 12 565 <span>грн</span></p>
+
+                            <div class="color_select">
+                                <div class="color_select_title">
+                                    Выбор цвета:
                                 </div>
-                                <p class="product__price"> 12 565 <span>грн</span></p>
-                                <div class="color_select">
-                                    <div class="option">
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="option">
-                                        <a href=""></a>
-                                    </div>
-                                    <div class="option">
-                                        <a href=""></a>
-                                    </div>
-                                    <div class="option">
-                                        <a href=""></a>
-                                    </div>
-                                    <div class="option">
-                                        <a href=""></a>
-                                    </div>
+                                <div class="option">
+                                    <a href="#"></a>
                                 </div>
-                                <div class="tel_list">
-                                    <a href="tel:+380632602600">
+                                <div class="option">
+                                    <a href=""></a>
+                                </div>
+                                <div class="option">
+                                    <a href=""></a>
+                                </div>
+                                <div class="option">
+                                    <a href=""></a>
+                                </div>
+                                <div class="option">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="tel_list">
+                                <a href="tel:+380632602600">
                                         <span>
                                             +38 (063) 260 26 00
                                         </span>
-                                    </a>
-                                    <button type="button" id="more_tel_btn" class="more_tel_btn" data-container="body"
+                                </a>
+                                <button type="button" id="more_tel_btn" class="more_tel_btn" data-container="body"
                                         data-offset="0 -150%" data-html="true" data-toggle="popover"
                                         data-placement="bottom" data-triffer="focus" data-content="<ul>
                                                 <li>
                                                     <a href='tel:+380632602600'>+38 (063) 260 26 00</a>
                                                 </li>
                                             </ul>">
-                                        <i class="fas fa-sort-down"></i>
-                                    </button>
-
-                                </div>
-                                <button type="button" class="mail_btn" data-toggle="modal" data-target="#formModal">
-                                   заказать
+                                    <i class="fas fa-sort-down"></i>
                                 </button>
+
                             </div>
-                            <div class="product__description">
-                                <p>The pleasure of relaxation. With clean, rational lines, Tiptoe takes contemporary
-                                    pieces
-                                    one step forward. A design based on a philosophy of simplicity and functionality, it
-                                    is
-                                    a sofa that can be used with different styles to create calm, serene environments.
-                                    The
-                                    slim legs give the piece its name, a model that is quiet, subtle, light and nimble,
-                                    as
-                                    if it were tip-toeing around the living room. As well as setting off the design, the
-                                    legs provide a sophisticated touch in either of their finishes: copper or graphite.
-                                    Tiptoe is irresistibly cosy. Its studied depth, variety of modules and various types
-                                    of
-                                    arm, mean that it can be configured to fit into any home. The use of fibre and
-                                    memory
-                                    foam in its cushions makes this one of our most comfortable products. Wallow in
-                                    scatter
-                                    cushions by adding extra deep modules or a chaise longue.
-                                </p>
-                                <p>
-                                    Further info from manufacturer on TIPTOE | Fabric sofaсроки работ по всем этапам.
-                                </p>
-                            </div>
+                            <button type="button" class="mail_btn" data-toggle="modal" data-target="#formModal">
+                                заказать
+                            </button>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="sliderContent">
-            <div class="sliderContent__item">
-                <div class="container">
-                    <h2 class="sliderContent__title">Недавно просмотренные товары</h2>
-                    <div class="thumbnailSlider">
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="color_select">
-                                <div class="option">
-                                    <a href=""></a>
-                                </div>
-                                <div class="option">
-                                    <a href=""></a>
-                                </div>
-                                <div class="option">
-                                    <a href=""></a>
-                                </div>
-                                <div class="option">
-                                    <a href=""></a>
-                                </div>
-                                <div class="option">
-                                    <a href=""></a>
-                                </div>
-                            </div>
-                            <a href="#" class="like"></a>
-                        </div>
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </div>
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </div>
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </div>
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </div>
-                        <div class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
-
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
+                        <div class="product__description">
+                            <p>The pleasure of relaxation. With clean, rational lines, Tiptoe takes contemporary
+                                pieces
+                                one step forward. A design based on a philosophy of simplicity and functionality, it
+                                is
+                                a sofa that can be used with different styles to create calm, serene environments.
+                                The
+                                slim legs give the piece its name, a model that is quiet, subtle, light and nimble,
+                                as
+                                if it were tip-toeing around the living room. As well as setting off the design, the
+                                legs provide a sophisticated touch in either of their finishes: copper or graphite.
+                                Tiptoe is irresistibly cosy. Its studied depth, variety of modules and various types
+                                of
+                                arm, mean that it can be configured to fit into any home. The use of fibre and
+                                memory
+                                foam in its cushions makes this one of our most comfortable products. Wallow in
+                                scatter
+                                cushions by adding extra deep modules or a chaise longue.
+                            </p>
+                            <p>
+                                Further info from manufacturer on TIPTOE | Fabric sofaсроки работ по всем этапам.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="sliderContent__item">
-                <div class="container">
-                    <h2 class="sliderContent__title">Товары могут идти в комплекте</h2>
-                    <div class="thumbnailSlider">
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
+        </section>
+    </div>
+    <div class="sliderContent">
+        <div class="sliderContent__item">
+            <div class="container">
+                <h2 class="sliderContent__title">Недавно просмотренные товары</h2>
+                <div class="thumbnailSlider">
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
 
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
+                            </div>
+                        </a>
+                        <div class="color_select">
+                            <div class="option">
+                                <a href=""></a>
+                            </div>
+                            <div class="option">
+                                <a href=""></a>
+                            </div>
+                            <div class="option">
+                                <a href=""></a>
+                            </div>
+                            <div class="option">
+                                <a href=""></a>
+                            </div>
+                            <div class="option">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                        <a href="#" class="like"></a>
+                    </div>
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
 
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </div>
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
+                                    <div class="current_currency">
+                                        грн
                                     </div>
-                                </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
-                                </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
 
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
-                        <article class="thumbnail thumbnail_hEffect">
-                            <div class="simple-slider-hover"></div>
-                            <a href="#" class="thumbnail__link">
-                                <div class="thumbnail__image">
-                                    <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </div>
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
                                 </div>
-                                <div class="thumbnail__caption">
-                                    <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
-                                        зеленый </p>
-                                    <div class="price">
-                                        <div class="current_price">
-                                            505
-                                        </div>
-                                        <div class="current_currency">
-                                            грн
-                                        </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </div>
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </div>
+                    <div class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
 
-                                        <div class="previous_price">
-                                            505
-                                        </div>
-                                        <div class="previous_currency">
-                                            грн
-                                        </div>
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="like"></a>
-                        </article>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="sliderContent__item">
+            <div class="container">
+                <h2 class="sliderContent__title">Товары могут идти в комплекте</h2>
+                <div class="thumbnailSlider">
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                    <article class="thumbnail thumbnail_hEffect">
+                        <div class="simple-slider-hover"></div>
+                        <a href="#" class="thumbnail__link">
+                            <div class="thumbnail__image">
+                                <img src="../images/cat/cat1.jpg" alt="...">
+                            </div>
+                            <div class="thumbnail__caption">
+                                <p>Женская рубашка поло с кортоткими рукавами Prater, цвет синий, темно-синий,
+                                    зеленый </p>
+                                <div class="price">
+                                    <div class="current_price">
+                                        505
+                                    </div>
+                                    <div class="current_currency">
+                                        грн
+                                    </div>
+
+                                    <div class="previous_price">
+                                        505
+                                    </div>
+                                    <div class="previous_currency">
+                                        грн
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="like"></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 <!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -788,60 +678,63 @@
             </div>
             <h5 class="modal-title">Сумка-холодильник, цвет синий</h5>
             <div class="modal-body">
-                <form action="">
-                    <input type="text" placeholder="ФИО">
-                    <input type="text" placeholder="Компания">
-                    <input type="tel" placeholder="Телефон">
-                    <input type="email" placeholder="Эл. почта">
-                    <textarea name="" id="" rows="5" placeholder="Комментарий"></textarea>
-                    <button type="button" class="send-form" >отправить</button>
+                <form action="" id="orderForm">
+                    <input type="text" placeholder="ФИО" id="name" name="name">
+                    <input type="text" placeholder="Компания" name="company">
+                    <input type="tel" placeholder="Телефон*" id="tel" name="tel">
+                    <input type="email" placeholder="Эл. почта" name="email">
+                    <textarea id="" rows="5" placeholder="Комментарий" name="comment"></textarea>
+                    <input type="submit" id='submit-btn' class="send-form" disabled value="отправить">
                 </form>
+                <div class="info-message">Спасибо за Ваш заказ!<br> Мы свяжемся с Вами в ближайшее время</div>
             </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 footer_logo">
-                <a href="">
-                    <img src="../images/svg/Smart_logo_2.svg" alt="">
-                </a>
-            </div>
-            <div class="footer_links col-8">
-                <div class="footer_cont">
-                    <ul>
-                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
-                        <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
-                    </ul>
-                    <div class="footer_mail">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a href="mailto:viktor.lapshin@gmail.com">
-                            viktor.lapshin@gmail.com
-                        </a>
-                    </div>
-                </div>
-                <div class="social_block">
-                    <div class="social_link">
-                        <a href="" class="instgr"></a>
-                        <a href="" class="fbook"></a>
-                    </div>
-                    <div class="dev_signature">
-                        created by
-                        <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
-                            KODA
-                        </a>
-                        2019
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-</footer>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 footer_logo">
+                    <a href="">
+                        <img src="../images/svg/Smart_logo_2.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer_links col-8">
+                    <div class="footer_cont">
+                        <ul>
+                            <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                            <li><a href="tel:+380632602600">+38 (063) 260 26 00</a></li>
+                        </ul>
+                        <div class="footer_mail">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:viktor.lapshin@gmail.com">
+                                viktor.lapshin@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social_block">
+                        <div class="social_link">
+                            <a href="" class="instgr"></a>
+                            <a href="" class="fbook"></a>
+                        </div>
+                        <div class="dev_signature">
+                            created by
+                            <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
+                                KODA
+                            </a>
+                            2019
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

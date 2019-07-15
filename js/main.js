@@ -12,15 +12,17 @@ var header = {
 };
 
 $(document).ready(function () {
-    $(".inner_menu_btn").each(function() {
+    $(".inner_menu_btn").each(function () {
         if ($(this).siblings('.menuInner').css('display') === 'block') {
         }
     });
+
     function changeHeaderView() {
         if ($(window).width() < 992) {
             $('.header__top').insertAfter($('.menu-main-list'));
         }
     }
+
     $(window).on("load resize", function (e) {
         changeHeaderView();
     });
@@ -32,8 +34,8 @@ $(document).ready(function () {
     });
 
 
-
     hideMenuArrows();
+
     function hideMenuArrows() {
         var menuItems = $('.menu-list .menu').children();
         $.each(menuItems, function () {
@@ -51,6 +53,7 @@ $(document).ready(function () {
     }
 
     toggleMobileInnerMenu();
+
     function toggleMobileInnerMenu() {
         $(".inner_menu_btn").on('click', function () {
             $(this).siblings('.menuInner').slideToggle('slow');
@@ -67,8 +70,7 @@ $(document).ready(function () {
             }).click(function () {
                 $(this).popover('show');
             })
-        }
-        else {
+        } else {
             $('[data-toggle="popover"]').popover({
                 trigger: 'manual',
             }).hover(function () {
@@ -92,7 +94,7 @@ $(document).ready(function () {
     });
 
     setTimeout(function () {
-        $('.leaflet-marker-pane img').attr("src","../images/map_marker.png");
+        $('.leaflet-marker-pane img').attr("src", "../images/map_marker.png");
     }, 700);
 
     $('.thumbnailSlider').slick({
@@ -154,12 +156,12 @@ var catalog = {
         $('.j-sorted').on('click', function () {
             $('.checkBoxWrap').addClass('open');
             $('.filters').removeClass('open');
-            $('html,body').animate({ scrollTop: 0 }, 'slow');
+            $('html,body').animate({scrollTop: 0}, 'slow');
         });
         $('.toggleOption').on('click', function () {
             $('.filters').addClass('open');
             $('.checkBoxWrap').removeClass('open');
-            $('html,body').animate({ scrollTop: 0 }, 'slow');
+            $('html,body').animate({scrollTop: 0}, 'slow');
         })
     },
     closeSortedOption: function () {
@@ -214,9 +216,65 @@ $(function () {
 
 
     findActiveMenuItemOnLoad();
+
     function findActiveMenuItemOnLoad() {
-        $('.menuInner__item.activeItem').parent().css( "display", "block" );
+        $('.menuInner__item.activeItem').parent().css("display", "block");
         $('.menuInner__item.activeItem').parent().siblings('.inner_menu_btn').addClass('opened')
     }
+
+    // ======FORM SETUP=======
+
+    $.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
+
+    $.validator.addMethod("lettersonly", function (value, element) {
+        var notEmptyInput = value.replace(/\s/g, '').length > 0;
+        return this.optional(element) || (/^[a-zA-Zа-яА-Я ]*$/i.test(value) && notEmptyInput);
+    });
+
+    $('#orderForm').validate({
+        rules: {
+            name: {lettersonly: true},
+            tel: {
+                digits: true,
+                required: true
+            },
+            email: {email: true}
+        }, messages: {
+            name: "Неправильный формат. Только буквы",
+            tel: "Неправильный формат. Только цифры",
+            email: "Неправильный формат"
+        },
+    });
+
+    $('#orderForm input').bind('keyup', function () {
+        if ($('#orderForm').validate().checkForm()) {
+            $('#submit-btn').attr('disabled', false);
+        } else {
+            $('#submit-btn').attr('disabled', true);
+        }
+    });
+    $("#orderForm").on("submit", function () {
+        $('.info-message').fadeIn();
+
+        $('#submit-btn').attr('disabled', true);
+        return false;
+    });
+
+    $('#formModal').on('hide.bs.modal', function (e) {
+        $('.info-message').hide();
+        $('#orderForm')[0].reset();
+        $('#orderForm').validate().destroy();
+    });
+    // ======FORM SETUP END=======
+
+    if (!$('.product .color_select').children('.option').length) {
+        console.log(123)
+        $('.color_select').hide();
+    }
+
+
 });
 
