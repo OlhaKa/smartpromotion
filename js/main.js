@@ -270,11 +270,6 @@ $(function () {
     });
     // ======FORM SETUP END=======
 
-    if (!$('.product .color_select').children('.option').length) {
-        console.log(123)
-        $('.color_select').hide();
-    }
-
 
 });
 
