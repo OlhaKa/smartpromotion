@@ -1086,6 +1086,7 @@ h2 {
 .priceBlock .color_select .option:nth-child(1) {
     background: #00abc3;
     background-clip: padding-box;
+    background-size: contain;
 }
 
 .thumbnail .color_select .option:nth-child(2),
