@@ -1047,14 +1047,15 @@ h2 {
 
 .thumbnail .color_select .option,
 .priceBlock .color_select .option {
-    border: 1px solid #999999;
+    -webkit-box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
+    -moz-box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
+    box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
+    border-radius: 2px;
     transition: .2s;
     margin: 0 5px 5px;
-
     width: 20px;
     height: 20px;
     position: relative;
-    border-radius: 2px;
 }
 
 .priceBlock .color_select .option {
@@ -1514,6 +1515,11 @@ h2 {
 
 .filtersItem:first-child {
     margin-top: 0;
+    padding-bottom: 15px;
+}
+
+.mfilter-content > ul > li {
+    padding: 5px;
 }
 
 .filtersItem .radioCont {
@@ -1741,8 +1747,12 @@ h2 {
     border: none;
 }
 
-.ui-slider-horizontal .ui-slider-range {
-    background-color: #69abbf;
+.mfilter-iscroll > .scroll-element .scroll-element_outer {
+    background: #cccccc;
+}
+
+body #mfilter-price-slider .ui-slider-range {
+    background: #00abc3 !important;
 }
 
 .ui-slider-horizontal {
@@ -1755,7 +1765,7 @@ h2 {
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-    top: -7px;
+    top: -5px;
 }
 
 .btn.priceBtn {
@@ -2987,11 +2997,11 @@ textarea.input {
 .write-to-btn {
     float: right;
     border-radius: 0;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     background: transparent;
 
-    height: 30px;
-    margin-top: -7px;
+    height: 33px;
+    margin-top: -8px;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -3001,6 +3011,7 @@ textarea.input {
 .write-to-btn a {
     color: #fff;
     text-decoration: none;
+    padding: 0 20px;
 }
 
 /*============MODAL FORM===========*/
@@ -3058,7 +3069,7 @@ textarea.input {
 }
 
 #orderForm #submit-btn:disabled {
-    background: #f0f0f0;
+    background: #cccccc;
 }
 
 #orderForm input::placeholder {
