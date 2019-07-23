@@ -1222,9 +1222,9 @@ h2 {
 }
 
 .thumbnailSection_cat .thumbnail_fixHImage .thumbnail__image {
-    float: right;
-    height: auto;
-    max-height: none;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
 }
 
 .thumbnailSection_cat .thumbnail_fixHImage .thumbnail__image:after {
@@ -1234,11 +1234,11 @@ h2 {
 }
 
 .thumbnailSection_cat .thumbnail__caption {
-    position: absolute;
-    left: 22px;
-    right: 22px;
-    top: 22px;
-    z-index: 3;
+    /*position: absolute;*/
+    /*left: 22px;*/
+    /*right: 22px;*/
+    /*top: 22px;*/
+    /*z-index: 3;*/
 }
 
 .thumbnailSection_cat .thumbnail__caption > * {
@@ -1256,6 +1256,14 @@ h2 {
 .thumbnailSection_cat .thumbnail__link {
     height: 100%;
     background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #f0f0f0;
+    transition: .2s;
+}
+
+.thumbnailSection_cat .thumbnail__link:hover {
+    border-left: 1px solid #00abc3;
 }
 
 .moreCaWrap {
@@ -1511,13 +1519,17 @@ h2 {
 .filtersItem {
     padding: 13px 15px;
     border: 1px solid #cdd1d1;
-    margin-top: -1px;
+    border-top: none;
 }
 
 .filtersItem:first-child {
     margin-top: 0;
-    padding-bottom: 15px;
 }
+
+.mfilter-content {
+    border: none;
+}
+
 
 .mfilter-content > ul > li {
     padding: 5px;
@@ -1582,6 +1594,10 @@ h2 {
 
 .filtersItem__inner {
     margin-top: 25px;
+}
+
+#sideMenuCategory {
+ padding: 18px 20px;
 }
 
 .filtersItem .slideFilters,
@@ -2917,6 +2933,7 @@ textarea.input {
 .menu-main-list > li > img {
     display: block;
     margin-bottom: 10px;
+    max-width: 40px;
 }
 
 .catalog-toggle-block {

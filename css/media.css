@@ -171,6 +171,10 @@
     .header__bottom .top {
         padding: 10px 0;
     }
+
+    .menu-head .slogan {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -339,6 +343,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    #menu-toggler span {
+        display: none;
+    }
     .grid-block {
         grid-template-columns: 1fr;
     }
@@ -375,9 +382,12 @@
         width: 100%;
     }
 
-
     .thumbnailSection__wrap article.thumbnail {
         margin-bottom: 30px;
+    }
+
+    .articles .thumbnail__link {
+        position: relative;
     }
 
 }
