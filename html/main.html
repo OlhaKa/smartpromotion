@@ -6,6 +6,7 @@
     <title> index </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' href='../favicon.ico' type='image/x-icon' >
     <link
             href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,400italic,600,600italic,700,700italic,800&subset=cyrillic,latin'
             rel='stylesheet' type='text/css'>
@@ -68,17 +69,24 @@
                 </a>
                 <a href="#" class="logo"></a>
                 <div class="searchContent">
-                    <div id="wrap">
-                        <form action="" autocomplete="off">
-                            <input id="search" name="search" type="text" placeholder="Что ищем?">
-                            <input id="search_submit" value="Rechercher" type="submit">
-                            <img src="../images/svg/magnifying-glass-browser.svg" alt="">
-                        </form>
+                    <form action="" class="searchForm">
+                        <input type="text" class="searchInput" placeholder="Поиск">
+                        <div class="open-form-btn"></div>
+                    </form>
 
-                    </div>
+<!--                    <div id="wrap">-->
+<!--                        <div id="search" class="input-group">-->
+<!--                            <input name="search" type="text" value="" placeholder="Поиск" class="form-control input-lg">-->
+<!--                            <input id="search_submit" value="Rechercher" type="submit">-->
+<!--                            <span style="display: none" class="input-group-btn">-->
+<!--    <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>-->
+<!--  </span>-->
+<!--                            <img src="../images/svg/magnifying-glass-browser.svg" alt="">-->
+<!--                        </div>                    </div>-->
+
                     <div class="basketFavoriteBtn">
-                        <a href="#" class="favoriteProduct">
-                            <span class="counter">10</span>
+                        <a href="http://smartpromotion.test-domain1.in.ua/index.php?route=account/wishlist" class="favoriteProduct">
+                            <span class="counter">0</span>
                         </a>
                     </div>
                 </div>
@@ -1141,11 +1149,10 @@
                         <a href="" class="fbook"></a>
                     </div>
                     <div class="dev_signature">
-                        created by
                         <a href="https://www.koda-ltd.com/" class="dev_link" target="_blank">
-                            KODA
+                            created by
                         </a>
-                        2019
+                        KODA 2019
                     </div>
                 </div>
             </div>
@@ -1157,6 +1164,7 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/slick.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
 <script src="../js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

@@ -3,15 +3,20 @@ var header = {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             if (scroll > 120) {
-                $('.catalog-toggle-block').addClass('fixed')
+                $('.catalog-toggle-block').addClass('fixed fade-in')
             } else {
-                $('.catalog-toggle-block').removeClass('fixed')
+                $('.catalog-toggle-block').removeClass('fixed fade-in')
             }
         });
     }
 };
 
 $(document).ready(function () {
+
+    $(".open-form-btn").click(function () {
+        $('.searchInput').toggleClass("opened")
+    });
+
     $(".inner_menu_btn").each(function () {
         if ($(this).siblings('.menuInner').css('display') === 'block') {
         }

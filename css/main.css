@@ -41,7 +41,6 @@
     display: inline-block;
     position: relative;
     padding: 0;
-    position: relative;
 }
 
 div#wrap i {
@@ -51,43 +50,92 @@ div#wrap i {
     vertical-align: middle;
 }
 
+#search:focus {
+    outline: none;
+}
+
 input#search_submit:focus {
     outline: none;
 }
 
-.searchContent input[type="text"] {
-    height: 49px;
-    display: inline-block;
-    font-weight: 100;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: #555;
-    padding: 3px;
-    padding-right: 61px;
-    width: 0;
-    position: absolute;
-    top: -17px;
-    right: 19px;
-    background: none;
-    z-index: 3;
-    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+/*.searchContent form:hover {*/
+
+/*}*/
+
+/*.searchContent input[type="text"] {*/
+/*    height: 49px;*/
+/*    display: inline-block;*/
+/*    font-weight: 100;*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    color: #555;*/
+/*    padding: 3px;*/
+/*    padding-right: 61px;*/
+/*    width: 0;*/
+/*    position: absolute;*/
+/*    top: -17px;*/
+/*    right: 19px;*/
+/*    background: none;*/
+/*    z-index: 3;*/
+/*    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);*/
+/*    cursor: pointer;*/
+/*}*/
+
+.searchForm {
+    position: relative;
+}
+
+.open-form-btn {
+    margin-right: 24px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/svg/magnifying-glass-browser.svg") no-repeat center/cover;
     cursor: pointer;
+    transition: background .2s;
 }
 
-.searchContent input[type="text"]:focus:hover {
-    border-bottom: 1px solid #BBB;
+.open-form-btn:hover {
+    background: url("../images/svg/magnifying-glass-browser-hover.svg") no-repeat center/cover;
 }
 
-.searchContent input[type="text"]:focus {
-    width: 300px;
-    z-index: 1;
-    border-bottom: 1px solid #BBB;
-    cursor: text;
-    font-size: 16px;
-    position: static;
+.searchInput {
+    width: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    right: calc(100% + 15px);
+    top: -10px;
     background: #ffffff;
+    transition: width .2s;
 }
+
+.searchInput.opened {
+    width: 250px;
+    padding: 10px 10px 5px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+/*.searchContent input[type="text"]:focus:hover {*/
+/*    border-bottom: 1px solid #BBB;*/
+/*}*/
+
+/*.searchContent input[type="text"]:focus {*/
+/*    width: 300px;*/
+/*    z-index: 1;*/
+/*    border-bottom: 1px solid #BBB;*/
+/*    cursor: text;*/
+/*    font-size: 16px;*/
+/*    position: static;*/
+/*    background: #ffffff;*/
+/*}*/
 
 .searchContent input[type="submit"] {
     height: 40px;
@@ -161,10 +209,6 @@ input#search_submit:focus {
 
 .footer_cont ul li a {
     color: #fff;
-}
-
-.footer_cont ul li a:hover {
-    text-decoration: none;
 }
 
 
@@ -279,6 +323,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+}
+
+main {
+    min-height: calc(100vh - 362px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -484,8 +532,12 @@ h2 {
     width: 30px;
     margin-right: 9px;
     height: 29px;
-    background: url("../images/svg/heart_black.svg") no-repeat;
-    background-size: cover;
+    background: url("../images/svg/heart_black.svg") no-repeat center/contain;
+    transition: background .2s;
+}
+
+.favoriteProduct:hover {
+    background: url("../images/svg/heart.svg") no-repeat center/contain;
 }
 
 .favoriteProduct .counter {
@@ -1047,15 +1099,16 @@ h2 {
 
 .thumbnail .color_select .option,
 .priceBlock .color_select .option {
-    -webkit-box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
-    -moz-box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
-    box-shadow: 0 0 0 0.5px rgba(153,153,153,1);
+    -webkit-box-shadow: 0 0 0 1px rgba(153,153,153,1);
+    -moz-box-shadow: 0 0 0 1px rgba(153,153,153,1);
+    box-shadow: 0 0 0 1px rgba(153,153,153,1);
     border-radius: 2px;
     transition: .2s;
     margin: 0 5px 5px;
     width: 20px;
     height: 20px;
     position: relative;
+    cursor: pointer;
 }
 
 .priceBlock .color_select .option {
@@ -1366,7 +1419,7 @@ h2 {
 
 /*------ CATALOG SIDEBAR NAV MENU ----------*/
 .nav-side-menu {
-    border: 1px solid rgba(89, 103, 103, 0.3);
+    border: 1px solid #ced4da;
     padding: 13px 15px;
 }
 
@@ -1518,7 +1571,7 @@ h2 {
 
 .filtersItem {
     padding: 13px 15px;
-    border: 1px solid #cdd1d1;
+    border: 1px solid #ced4da;
     border-top: none;
 }
 
@@ -1530,6 +1583,22 @@ h2 {
     border: none;
 }
 
+.mfilter-price-inputs input:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.mfilter-price-inputs {
+    font-size: 14px;
+}
+
+#mfilter-opts-price-min,
+#mfilter-opts-price-max {
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    border-radius: 0;
+}
 
 .mfilter-content > ul > li {
     padding: 5px;
@@ -1569,6 +1638,7 @@ h2 {
     position: relative;
     font-size: 14px;
     color: #000;
+    margin: 0;
 }
 
 .filtersItem label:before {
@@ -1578,7 +1648,11 @@ h2 {
     margin-right: 9px;
     border-radius: 16px;
     content: ' ';
-    border: 1px solid;
+    border: 1px solid #ced4da;
+}
+
+#brends {
+    padding-bottom: 15px;
 }
 
 .filtersItem input[type="radio"]:checked + label:after {
@@ -1772,6 +1846,10 @@ body #mfilter-price-slider .ui-slider-range {
     background: #00abc3 !important;
 }
 
+.mfilter-price-slider {
+    margin-top: 15px !important;
+}
+
 .ui-slider-horizontal {
     height: 2px;
 }
@@ -1931,6 +2009,11 @@ body #mfilter-price-slider .ui-slider-range {
 .tel_list .more_tel_btn:focus,
 .mail_btn a:focus {
     outline: none;
+}
+
+.tel_list:hover,
+.mail_btn:hover {
+    opacity: 0.8;
 }
 
 .tel_list .more_tel_btn .fas {
@@ -2512,18 +2595,9 @@ body #mfilter-price-slider .ui-slider-range {
     margin-left: 15px;
 }
 
-.footer_mail a:hover {
-    text-decoration: none;
-}
-
 .footer .social_block .dev_link {
     color: #ffffff;
     transition: .2s;
-}
-
-.footer .social_block .dev_link:hover {
-    text-decoration: none;
-    color: #00abc3;
 }
 
 .footer .social_link {
@@ -2548,18 +2622,15 @@ body #mfilter-price-slider .ui-slider-range {
     background-size: contain;
 }
 
-.footer .social_link a.instgr:hover {
-    background: url('../images/svg/instagram_hover.svg') no-repeat;
-    background-size: contain;
-}
+.footer .social_link a:hover,
+.footer .social_link a.fbook:hover,
+.write-to-btn:hover,
+#menu-toggler:hover {
+    opacity: 0.8;
+ }
 
 .footer .social_link a.fbook {
     background: url('../images/svg/facebook.svg') no-repeat;
-    background-size: contain;
-}
-
-.footer .social_link a.fbook:hover {
-    background: url('../images/svg/facebook-hover.svg') no-repeat;
     background-size: contain;
 }
 
@@ -2938,7 +3009,7 @@ textarea.input {
 
 .catalog-toggle-block {
     position: relative;
-    transition: transform .2s ease-out;
+    /*transition: transform .2s ease-out;*/
     z-index: 20;
 }
 
@@ -2960,11 +3031,66 @@ textarea.input {
 
 .catalog-toggle-block.fixed {
     position: fixed;
-    top: -44px;
+    /*top: -44px;*/
     left: 0;
     width: 100%;
-    transform: translateY(44px);
+    /*transform: translateY(44px);*/
     overflow-y: auto;
+    top: 0;
+}
+
+.fade-in:not(.opened) {
+    animation: fadeIn ease .75s;
+    -webkit-animation: fadeIn ease .6s;
+    -moz-animation: fadeIn ease .6s;
+    -o-animation: fadeIn ease .6s;
+    -ms-animation: fadeIn ease .6s;
+}
+
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 .catalog-toggle-block.fixed.opened {
