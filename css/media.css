@@ -184,6 +184,41 @@
 }
 
 @media (max-width: 767.98px) {
+    .account-wishlist .table thead {
+        display: none;
+    }
+    .account-wishlist .table tr {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 20px 75px;
+        position: relative;
+        border-bottom: 1px solid #cdd1d1;
+    }
+
+    .account-wishlist .table tr:last-child {
+        border-bottom: none;
+    }
+
+    .account-wishlist .table td {
+        border: none;
+        min-height: 26px;
+        text-align: left;
+    }
+
+    .account-wishlist .table td:first-child {
+        position: absolute;
+        top: calc(50% - 23px);
+        left: 0;
+    }
+
+    .account-wishlist .table td:last-child {
+        position: absolute;
+        right: 0;
+        top: calc(50% - 10px);
+    }
+
     .grid-block {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -349,6 +384,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .account-wishlist #content {
+        padding: 0 15px;
+    }
+
     #menu-toggler span {
         display: none;
     }

@@ -30,8 +30,8 @@ $(document).ready(function () {
 
     $(window).on("load resize", function (e) {
         changeHeaderView();
-    });
 
+    });
 
 // ======MENU TOGGLE========
     $('#menu-toggler, .close-menu-btn').click(function () {
