@@ -32,6 +32,7 @@ $(document).ready(function () {
         changeHeaderView();
     });
 
+
 // ======MENU TOGGLE========
     $('#menu-toggler, .close-menu-btn').click(function () {
         $('.menu-content').slideToggle();
@@ -193,9 +194,7 @@ $(function () {
     catalog.sortedOptions(browserW);
     catalog.closeSortedOption();
     catalog.filtersToggle();
-    if (browserW.width() > 991) {
-        header.fixedHeader(browserW);
-    }
+    header.fixedHeader(browserW);
 
     browserW.trigger('resize');
 

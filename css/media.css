@@ -177,6 +177,12 @@
     }
 }
 
+@media (max-width: 992px) {
+    main {
+        min-height: calc(100vh - 314px);
+    }
+}
+
 @media (max-width: 767.98px) {
     .grid-block {
         grid-template-columns: repeat(2, 1fr);
@@ -390,6 +396,9 @@
         position: relative;
     }
 
+    #orderForm input {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 480px) {

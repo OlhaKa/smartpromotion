@@ -645,6 +645,10 @@ h2 {
     width: 100%;
 }
 
+.menuInner .menuInner__item .activeItem {
+    color: #00abc3;
+}
+
 .menu .menu__item .menuInner .menuInner__item a {
     font-size: 15px;
     color: #000000;
@@ -1004,6 +1008,10 @@ h2 {
     text-transform: uppercase;
 }
 
+.thumbnail_hEffect .price .previous_price {
+    margin-left: 20px;
+}
+
 .thumbnail__caption p {
     margin: 0;
     font-size: 16px;
@@ -1109,6 +1117,7 @@ h2 {
     height: 20px;
     position: relative;
     cursor: pointer;
+    -moz-transform-origin: 0 0;
 }
 
 .priceBlock .color_select .option {
@@ -1119,6 +1128,7 @@ h2 {
 
 .thumbnail .color_select .option:hover,
 .priceBlock .color_select .option:hover {
+    -moz-transform-origin: 0 0;
     transform: scale(1.15);
 }
 
@@ -1671,7 +1681,7 @@ h2 {
 }
 
 #sideMenuCategory {
- padding: 18px 20px;
+    padding: 18px 20px;
 }
 
 .filtersItem .slideFilters,
@@ -1697,6 +1707,11 @@ h2 {
 .side-menu-item[aria-expanded='true'] .slideFilters:after {
     transform: rotate(0deg);
     transition: transform .3s;
+    display: block;
+    width: 10px;
+    height: 2px;
+    content: ' ';
+    background-color: #00abc3;
 }
 
 .checkBoxWrap {
@@ -2627,7 +2642,7 @@ body #mfilter-price-slider .ui-slider-range {
 .write-to-btn:hover,
 #menu-toggler:hover {
     opacity: 0.8;
- }
+}
 
 .footer .social_link a.fbook {
     background: url('../images/svg/facebook.svg') no-repeat;
@@ -3141,13 +3156,12 @@ textarea.input {
 .write-to-btn {
     float: right;
     border-radius: 0;
-    border: 1px solid #fff;
+    border: none;
     background: transparent;
-
     height: 33px;
     margin-top: -8px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
 }
 .write-to-btn:focus {
     outline: none;
@@ -3257,3 +3271,75 @@ textarea.input {
 }
 
 /*============MODAL FORM END===========*/
+
+
+/*==============WISHLIST PAGE=============*/
+
+.account-wishlist #content {
+    width: 100%;
+}
+
+.account-wishlist #content h2 {
+    margin-top: 38px;
+    margin-bottom: 33px;
+    text-align: left;
+}
+
+.account-wishlist #content .buttons {
+    margin-bottom: 45px;
+}
+
+.account-wishlist .table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.account-wishlist .table td {
+   vertical-align: middle;
+    padding: 5px;
+    border-top: 1px solid #cdd1d1;
+    min-height: 58px;
+}
+
+.account-wishlist .table td img {
+    max-height: 47px;
+}
+
+.account-wishlist .table td a {
+    color: #000000;
+}
+
+.account-wishlist .table thead td {
+    padding: 20px 5px;
+    text-transform: uppercase;
+}
+
+.account-wishlist .btn-delete img{
+    max-width: 20px;
+}
+
+.bordered_btn {
+    width: 230px;
+    height: 48px;
+    border: 1px solid #00adc3;
+    margin-top: 25px;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bordered_btn a {
+    color: #00adc3;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 14px;
+    text-decoration: none;
+}
+
+.bordered_btn:hover {
+    opacity: 0.8;
+}
