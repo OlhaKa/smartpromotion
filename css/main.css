@@ -1332,6 +1332,7 @@ h2 {
 .moreCaWrap {
     text-align: center;
     margin-top: 114px;
+    display: none;
 }
 
 .moreCat {
