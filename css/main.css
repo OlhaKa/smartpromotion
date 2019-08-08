@@ -1134,15 +1134,17 @@ h2 {
 
 .thumbnail .color_select .option a,
 .priceBlock .color_select .option a {
-    width: 100%;
     height: 100%;
     display: block;
 }
 
-/*.thumbnail .color_select .option:last-child,*/
-/*.priceBlock .color_select .option:last-child {*/
-/*    margin-right: 0;*/
-/*}*/
+.thumbnail .color_select .option a {
+    width: 20px;
+}
+
+.priceBlock .color_select .option a {
+    width: 30px;
+}
 
 /*---- GET COLORS ---------*/
 .thumbnail .color_select .option:nth-child(1),
