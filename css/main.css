@@ -1185,6 +1185,10 @@ h2 {
     row-gap: 40px;
 }
 
+.grid-block article {
+    display: none;
+}
+
 .thumbnailSection {
     padding-top: 68px;
     padding-bottom: 28px;
@@ -1334,7 +1338,6 @@ h2 {
 .moreCaWrap {
     text-align: center;
     margin-top: 114px;
-    display: none;
 }
 
 .moreCat {

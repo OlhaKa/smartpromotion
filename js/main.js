@@ -13,6 +13,31 @@ var header = {
 
 $(document).ready(function () {
 
+// --------- hide product items on the Home page---------
+    function hideProductsList(itemsNumber) {
+        $('.grid-block article').slice(0, itemsNumber).show();
+        $('.moreCaWrap').on('click', function (e) {
+            e.preventDefault();
+            $('.grid-block article:hidden').slice(0, itemsNumber).slideDown();
+            if ($('.grid-block article:hidden').length == 0) {
+                $('.moreCaWrap').hide();
+            }
+        });
+    }
+
+    function setupProductsList() {
+        if ($(window).width() >= 1200) {
+            hideProductsList(10)
+        } else if ($(window).width() < 1200 && $(window).width() > 992) {
+            hideProductsList(8)
+        } else if ($(window).width() < 992 && $(window).width() > 767) {
+            hideProductsList(6)
+        } else if ($(window).width() <= 767) {
+            hideProductsList(4)
+        }
+    }
+    // --------- hide product items on the Home page (end)---------
+
     $(".open-form-btn").click(function () {
         $('.searchInput').toggleClass("opened")
     });
@@ -30,7 +55,7 @@ $(document).ready(function () {
 
     $(window).on("load resize", function (e) {
         changeHeaderView();
-
+        setupProductsList();
     });
 
 // ======MENU TOGGLE========
